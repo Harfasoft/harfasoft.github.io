@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'myriad';
+    src:  url('fonts/MyriadProRegular.ttf');    
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+/*{margin: 0;padding: 0;}*/
+
+body{color: /*rgb(235, 115, 5);*/ #eb7305;font-size: 16px;font-family: "myriad", sans-serif; position: relative; background-color: rgb(9, 0, 36);}
+
+header{width: 100%;height: 35px; background-color: rgb(9, 0, 36); position: relative;z-index: 999;}
+
+header h1{display: none;}
+
+header nav .ioMenuMovil {cursor: pointer; height: 35px; width: 50px; background-color: /*rgb(235, 115, 5);*/ #eb7305; line-height: 40px; margin: 0px 0px 0px 10px; }
+
+header nav .ioMenuMovil::before{content: '|||'; transform: rotate(90deg);position: absolute;font-size: 25px;font-weight: bolder;top: 1px; bottom: 1px; left: 28px; /* background-color: #090024;  */}
+
+header nav #card_menu{position: relative;width: 230px;top: -35px;left: 0px;border-right: 3px solid #AFAEAE;background-color: white;z-index: 999;padding-bottom: 50px;}
+
+header nav #card_menu #hideMenu{height: 32px;width: 45px;/* background-color: rgb(9, 0, 36); */border: 2px solid /*rgb(235, 115, 5);*/ #eb7305;margin: 0px 0px 0px 10px;cursor: pointer;}
+
+header nav #card_menu #hideMenu:hover{background-color: #090024;/*rgb(9, 0, 36);    */}
+
+header nav #card_menu #hideMenu p{color: /*rgb(235, 115, 5);*/ #eb7305;font-weight: bolder;font-size: 20px;text-decoration: none;margin: 5px 15px 5px 15px;}
+
+header nav #card_menu #logo_menu{height: 200px;width: 80%;margin: 30px 0px;margin-left: 10%;margin-bottom: 50px;}
+
+header nav #card_menu #logo_menu img{width: 100%;}
+
+header nav #card_menu ul{margin-top: -20px;}
+
+header nav #card_menu ul li{list-style: none;font-size: 1.2em;line-height: 35px;}
+
+header nav #card_menu ul li a{text-decoration: none;color: black;}
+
+header nav #card_menu ul li a:hover{border-bottom-width: thick; border-bottom-style: solid;border-bottom-color: #eb7305;cursor: pointer;}
+
+header #prev_section,
+header #next_section{width: 25px;height: 25px;cursor: pointer; margin: 5px; position: absolute; top: 0px; overflow: hidden;}
+
+header #prev_section{right: 35px;}
+
+header #next_section{right: 5px;}
+
+header #prev_section span,header #next_section span{width: 250px;top: 5px;left: 5px;position: relative;}
+
+div#slider{width: 100%;position: relative;height: 600px;/*background-color: black;*/}
+#slider section.slide{position: absolute;width: 100%;top:-19px;left: 0px;}
+
+#slider #inicio{font-family: "myriad", sans-serif; position: relative;text-align: center;padding-bottom: 50px;   background-color: orange; display: block;}
+/*#slider #inicio .mainanimation{background-color: red; width: 80%;margin-left: 10%;min-height: 300px;position: absolute;}*/
+#slider #inicio .mainbanner{/*position: fixed;*/background-color: green;width: 100vw; /*margin-left: 20vw;*/ min-height: 430px;}
+#slider #inicio .mainbanner h2{font-size: 1.2em;padding-top: 80px;color: white;font-weight: lighter;}
+#slider #inicio .mainbanner Strong{font-size: 2em; font-family: "Ubuntu", sans-serif;display: block;}
+#slider #inicio .mainbanner figure, #slider #inicio .mainbanner img{width: 100%;margin: 0px;}
+/*#slider #inicio .buttonspage{width: 100%; background-color: white;}
+#slider #inicio .buttonspage > *{display: inline-block;background: red;width: 40%;margin: 5px 2.5%; color: white;padding: 15px 2.5%;}
+#slider #inicio .buttonspage #btn_contacto_inicio{cursor: pointer;background: #eb7305;}
+#slider #inicio .buttonspage a{text-decoration: none;background-color: #090024;} */
+
+#slider #quienesSomos{height: 400px;background-color: yellow;}
+#slider #servicio{height: 300px;background-color: red;}
+#slider #contactanos{height: 200px;background-color: blue;}
+#slider #blog{height: 100px;background-color: purple;}
+
+#form_contacto{position: absolute; right: 0px; top: 35px; width: 250px; border-top: 1px solid black; box-shadow: 0px 0px 3px #090024; background-color: white; font-family:"myriad", sans-serif; border: 1px solid green; height: 100vh;z-index: 999; display: none;}
+#form_contacto #close_form{position: absolute; left: 85%; top: 190px; width: 30px; height: 30px;}
+#form_contacto #close_form:hover{cursor: pointer;}
+#form_contacto #close_form::before{content: "X"; position: relative; top: 7px; left: 11px;font-weight: bold; font-size: 18px; color: #eb7305;}
+
+#form_contacto figure{height: 180px; width: 100px;margin: 0px;padding: 0px;text-align: center;background-color: "#29abe2";}
+#form_contacto figure img{height: 100%;margin: 0px;}
+#form_contacto p{margin: 20px; width: 90%; margin-left: 5%;}
+#form_contacto input,
+#form_contacto textarea{display: block; margin: 20px; border: none; border-bottom: 2px solid gray; width: 90%; margin-left: 5%; padding-bottom: 3px;margin-bottom: 50px; font-weight: bold;}
+#form_contacto #btn_contacto{background-color: #eb7305;color: white;border: none;padding: 8px 0px;border-radius: 5px;}
+
+#form_show{width: 60px;height: 60px;border-radius: 50%; color: white; z-index: 80;position: fixed;right: 10px;top: 80vh; background-color: #eb7305;}
+#form_show:hover{cursor: pointer;}
+#form_show img{position: relative;top: 15px;left: 15px; width: 50%;}
+
+footer{background-color: #090024;width: 100%;height: 150px;position: fixed; text-align: center; color: white;z-index: 90;bottom: -130px;transition-duration: 0.4s;}
+footer:hover{bottom: 0px;}
+footer::after{color: white; content: "\ea44";font-family: "icomoon";font-size: 5em; position: absolute;top: 0px;left: 50%;width: 80px;height: 80px;margin-left: -40px;margin-top: -30px;border-radius: 50%;background-color: #090024;transform: rotate(90deg);transition-duration: 0.4s;}
+footer:hover::after{transform: rotate(270deg); background-color: #eb7305; color: #090024;}
+footer .red_social{margin-top: 70px; width: 100%;height: 40px;}
+footer .red_social a{width: 40px; height: 40px;display: inline-block;position: relative;}
+footer .red_social a::before{color: white;font-family: "icomoon"; text-decoration: none;position: absolute;font-size: 2em;top: 5px;left: 5px;}
+footer .red_social a:nth-child(1)::before{content: "\ea90";}
+footer .red_social a:nth-child(2)::before{content: "\ea92";}
+footer .red_social a:nth-child(3)::before{content: "\ea93";}
+footer .red_social a:nth-child(4)::before{content: "\eaca";}
+footer p{font-size: 0.8em;font-weight: lighter;}
+
+@media screen and (min-width: 480px) {
+  /*  #slider #inicio .mainbanner{width: 270px;left: 50%;margin-left: -135px; padding-bottom:50px;}
+    #slider #inicio .mainbanner h2{font-size: 1.4em;}  
+    #slider #inicio .mainbanner figure{width: 80%; margin-left:10%;}  
+    #slider #inicio .buttonspage > *{width:200px;} */
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: aliceblue;
+        color: black;
+    }
+    
+}
+
+@media screen and (min-width: 767px) {
+    body{
+        background-color: blueviolet;
+    }
+    
+    header{
+        height: 50px;
+    }
+
+    header h1{
+        cursor: pointer;
+        display: inline-block;
+        width: 20%;        
+        margin: 0px;
+        height: 50px;
+        margin-left: 80px;
+        line-height: 50px;
+        min-width: 200px;        
+    }
+
+    header h1 > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: rgb(235, 115, 5);
+        font-size: 0.8em;
+        margin: 0px 3px;
+    }
+    header h1 figure{
+        height: 40px;
+        width: 40px;
+        margin: 0px;        
+      /*  background-color: aliceblue; */
+    }
+
+    header h1 figure img{
+        width: 100%;
+        height: 70%;
+        top: 2px;
+    }
+
+    header nav{
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;       
+    }
+
+    header nav #showMenu,
+    header nav #hideMenu{
+        display: none;
+    }
+
+    header nav #card_menu{
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;        
+        text-align: right;
+        padding-bottom: 0px;
+    }
+    
+    header nav #card_menu figure{
+        display: none;
+    }
+
+    header nav #card_menu ul{
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+    }
+
+    header nav #card_menu ul li{
+        display: inline-block;
+        width: 105px;       
+        text-align: center;
+        font-size: 1.0em;
+        margin: 0px -2px;
+        padding: 0px;
+    }
+
+    header nav #card_menu ul li a{
+        color: white;
+      /*  background-color: aquamarine;*/
+    }
+    
+    header nav #card_menu ul li a:hover{
+        border-bottom-width: thick;
+        border-bottom-style: solid;
+        border-bottom-color: #eb7305;
+        cursor: pointer;
+    }
+    /*header nav #card_menu ul li:nth-of-type(1)a:focus{
+        border-bottom: 1px solid rgb(235, 115, 5);
+    }*/
+
+    header #prev_section span,
+    header #next_section span{
+        font-size: 20px;
+        color: #29abe2;
+        position: absolute;
+        width: 50px;
+        height: 40px;        
+        right: 40px;
+        z-index: 999;
+    }
+
+    header #prev_section{
+        top: 90px;
+        right: 10px;
+    }
+
+    header #next_section{
+        top: 115px;
+        right: 10px;
+    }
+    
+    #form_contacto{
+        top: 50px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    body{
+        background-color: chartreuse;
+    }    
+}
+
+p a { color: red; }
+p * a { color: yellow; }
