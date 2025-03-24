@@ -656,11 +656,65 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{margin-left: 
 @media screen and (max-width:360px)  {
     body{
         background: red;
-    }  
-}
-
-/*@media screen and (min-width:360px) and (max-width:767px) and (orientation: landscape){
-    body{
-        background: red;
     }
-}*/
+    
+    body header{ align-items: center; display: flex; width: 100%; height: 100vh; margin-bottom: 30px;}
+body header .header_video{ position: absolute; top: 0; left: 0; height: 100vh; width: 100%; overflow: hidden; }
+body header .header_video video{ max-width: 100vw; height: 100vh; object-fit: cover;}
+body header .header_overlay{ background-color: #090024; height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70;}
+body header .header_content{ z-index: 2; position: relative; top: 0; left: 8%;}
+body header .header_content h1{ font-family: 'Ubuntu'; font-size: 35px; margin-bottom: 0; }
+body header .header_content p{ font-family: 'myriad', sans-serif; font-size: 1rem; display: block; padding-bottom: 2rem; }
+
+body header .logo{ /*background-color: red;*/ display: flex; width: 100vw; height: 100px; z-index: 2; position: absolute; top: 0; left: 0;}
+body header .logo figure{ /* background-color: red; */ width: 100px;height: 100%; margin-left: 20px;}
+body header .logo figure img{/*background-color: purple;*/ width: 100%; height: 100%;}
+body header .logo figure:hover{cursor: pointer;}
+body header .logo .info_header{ display: none; /* background-color: #01b23b; */ margin: 0 30% 0 8%; /*padding: 37px;*/ text-align: center; }
+body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold; font-size: 15px; }
+body header .logo .red_social{ display: none; /* background-color: #A76A9E; */ width: 30%; position: absolute; top: 35px; right: 20px; height: 40px; }
+body header .logo .red_social a{/* background-color: #01b23b; */ width: 10%; height: 30px;display: inline-block; margin: 2px 2px 0 20px; padding: 3px; }
+body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.2em; }
+body header .logo .red_social a:nth-child(1)::before{content: "\ea90";}
+body header .logo .red_social a:nth-child(2)::before{content: "\ea92";}
+body header .logo .red_social a:nth-child(3)::before{content: "\ea93";}
+body header .logo .red_social a:nth-child(4)::before{content: "\eaca";}
+body header .logo .red_social a:hover::before{color: #ffffff;}
+body header .header_hr{ display: none; background-color: #4d5566; height: 2px; position: absolute; top: 100px; left: 0; width: 100vw; }
+
+body header .logo #show_menu{ display: block; /*background-color: aqua;*/ color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 16px; }
+body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 20px;font-weight: bolder; position: absolute; top: 10px; right: 5px;  }
+body header .logo #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305; }
+body header .logo #close_menu{ /*background-color: aquamarine;*/ display: none; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 16px;}
+body header .logo #close_menu::before{content: 'X'; font-size: 20px; font-weight: bolder; position: relative; top: 10px; right: -18px;}
+body header .logo #close_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
+
+body header nav {display: none; background-color: #ffffff; width: 100vw;  height: 220px; position: absolute; top: 90px; left: 0; z-index: 2;}
+body header nav ul{ display: block; list-style: none; margin-bottom: 60px;}
+body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 0;}
+body header nav ul li a{ font-family: 'Ubuntu'; font-size: 16px; color: #090024;}
+body header nav ul li a:hover{color: #eb7305;}
+
+body .general_container{ /*background-color: red;*/ width: 100%; position: relative; top: 0; left: 0;}
+body .btn_action_section{ width: 100%; align-items: center; margin-top: 20px; padding-bottom: 30px;}
+body .btn_action_section .btn_action_container{display: block; width: 90%; position: relative; top: 0; left: 0;}
+body .btn_action_section .btn_action_container div{ height: 30px; width: 90%; margin-top: 30px; padding: 10px;}
+body .btn_action_section .btn_action_container #btn-services{background-color: #eb7305; color: #090024; font-family: 'Ubuntu'; font-size: 1em;  margin: 30px 100px 0 0; line-height: 1.7em; text-align: center;}
+body .btn_action_section .btn_action_container #btn-cotizar{border: 1px solid #eb7305; color: #ffffff; font-family: 'Ubuntu'; font-size: 1em; line-height: 1.7em; text-align: center;}
+body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
+body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
+
+
+
+
+
+
+body .fixed_home{ /*background-color: blue;*/ position: fixed; bottom: 100px; right: 50px; width: 60px; height: 150px; z-index: 99999999;}
+body .fixed_home .return{ /*background-color: purple;*/ border-radius: 18px; width: 40px; height: 50px; margin: 20px 10px 10px 10px;}
+body .fixed_home .return:hover{cursor: pointer;}
+body .fixed_home .return a::before{ /*background-color: #eb7305;*/ border-radius: 18px; content: '<'; transform: rotate(90deg); font-size: 30px; font-weight: bold; position: absolute; top: 24px; left: 5px; padding: 0 15px; }
+body .fixed_home .whatsapp{ /*background-color: yellow;*/ border-radius: 50px; margin: 10px 5px 0 5px; width: 40px; height: 40px; position: relative; top: 10px; left: 5px;}
+body .fixed_home .whatsapp a::before{ background-color: #4d5566; border-radius: 50px; content: "\ea93";  color: #01b23b; font-family: "icomoon"; font-size: 2.5em; text-decoration: none;position: absolute;top: 0;left: 0; width: 40px; height: 40px; }
+
+
+}
