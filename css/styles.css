@@ -704,12 +704,12 @@ body .btn_action_section .btn_action_container #btn-cotizar{border: 1px solid #e
 body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
 body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
 
-body .services{ /*background-color: #fbeb23;*/ transition-duration: 0.3s; color: #333; margin: 100px 0 20px 0; width: 100vw;}
+body .services{ /*background-color: #fbeb23;*/ transition-duration: 0.3s; color: #333; margin: 100px 0 20px 0; width: 100vw; padding-bottom: 50px;}
 body .services:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
 body .services .services_content{ /*background-color: #34b446;*/ width: 100%; position: relative; top: 10px; left: 0; height: auto; }
 body .services .services_content h2{font-family: 'Ubuntu'; font-weight: bold; font-size: 2em; margin-left: 38px; padding-top: 20px; padding-bottom: 30px;}    
 body .services .services_content .services_item{ /*background-color: bisque;*/ display: block; width: 100%; height: auto; padding-bottom: 0 0 25px 30px;}
-body .services .services_content .services_item div{ /*background-color: aquamarine;*/ width: 80%; margin: 30px 35px; height: 470px; transition-duration: 0.3s; }
+body .services .services_content .services_item div{ /*background-color: aquamarine;*/ width: 80%; margin: 30px 35px; height: 460px; transition-duration: 0.3s; }
 body .services .services_content div figure{ /*background-color: purple;*/ width: 100%; height: auto/*370px*/;}
 body .services .services_content .services_item div figure img{width: 100%;}
 body .services .services_content .services_item div h3{ /*background-color: #ffffff;*/ font-family: 'myriad', sans-serif; font-size: 20px; padding: 20px 14px; }
