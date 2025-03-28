@@ -8,25 +8,20 @@
 *{margin: 0; padding: 0; box-sizing: content-box;}
 body,a{color: #fff; /*#090024*/; /*font-size: 18px;*/ text-decoration: none; overflow-x: hidden;}
 
-@media only screen and (min-width: 982px){
+@media only screen and (min-width: 1280px){
 
-body header{ align-items: center; /*background-color: #090024;*/ display: flex; width: 100%; height: 100vh; /*position: relative;*/ margin-bottom: 30px;}
+body header{ align-items: center; /*background-color: #090024;*/ display: flex;  width: 100%; height: 100vh; position: relative; margin-bottom: 30px;}
 body header .header_video{ position: absolute; top: 0; left: 0; height: 100vh; width: 100%; overflow: hidden; }
-body header video{ min-width: 100%; min-height: 100%; }
-body header .header_overlay{ background-color: #090024; height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70;}
-body header .header_content{ z-index: 2; position: relative; top: 40px; left: 17%;}
-body header .header_content h1{ font-family: 'Ubuntu'; font-size: 60px; margin-bottom: 0; }
-body header .header_content p{ font-family: 'myriad', sans-serif; font-size: 1.5rem; display: block; padding-bottom: 2rem; }
-
-body header .logo{ display: flex; width: 70%; height: 100px; z-index: 2; position: absolute; top: 0; left: 15%;}
-/*body header .logo .image{background-color: #01b23b; width: 13%; height: 100%; margin-left: 20px; *overflow: hidden;*}*/
-body header .logo figure{/*background-color: red;*/ width: 120px;height: 100%; margin-left: 20px;}
+body header video{ width: 100vw; height: 100vh; object-fit: cover;}
+body header .header_overlay { background-color: rgba(9, 0, 36, 0.7); /* Color con opacidad */ height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; }
+body header .logo{ /*background-color: red;*/ display: flex; width: 100%; height: auto; z-index: 2; position: absolute; top: 0; left: 0;}
+body header .logo figure{ /*background-color: yellow;*/ width: 120px;height: 100%; margin-left: 35px;}
 body header .logo figure img{/*background-color: purple;*/ width: 100%; height: 100%;}
 body header .logo figure:hover{cursor: pointer;}
-body header .logo .info_header{ margin: 0 30% 0 25%; padding: 37px; text-align: center; }
+body header .logo .info_header{ /*background-color: #01b23b;*/ margin: 0 25% 0 22%; padding: 37px 25px; text-align: center; }
 body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold; font-size: 18px; }
-body header .logo .red_social{ width: 20%; position: absolute; top: 28px; right: 0; height: 40px; }
-body header .logo .red_social a{width: 10%; height: 40px;display: inline-block;position: relative; top: 5px; left: 30px; margin-left: 15px; padding: 2px; }
+body header .logo .red_social{ /*background-color: #A76A9E;*/ width: 17%; height: 50px; position: absolute; top: 26px; right: 30px; }
+body header .logo .red_social a{width: 15%; height: 40px;display: inline-block; margin-left: 8px; padding: 8px 0 0 8px; }
 body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.5em; }
 body header .logo .red_social a:nth-child(1)::before{content: "\ea90";}
 body header .logo .red_social a:nth-child(2)::before{content: "\ea92";}
@@ -34,8 +29,11 @@ body header .logo .red_social a:nth-child(3)::before{content: "\ea93";}
 body header .logo .red_social a:nth-child(4)::before{content: "\eaca";}
 body header .logo .red_social a:hover::before{color: #ffffff;}
 body header .header_hr{ background-color: #4d5566; height: 2px; position: absolute; top: 100px; left: 0; width: 100vw; z-index: 2;}
+body header .logo .header_content { width: 100%; position: absolute; top: 100%; transform: translateY(50%);  left: 0; margin-left: 150px; }
+body header .logo .header_content h1{ font-family: 'Ubuntu'; font-size: 55px; margin-bottom: 0; }
+body header .logo .header_content p{ font-family: 'myriad', sans-serif; font-size: 1.5rem; display: block; padding-bottom: 2rem; }
 
-body header nav { width: 70%;  height: 40px; position: absolute; top: 120px; left: 15%; z-index: 2;}
+body header nav { width: 70%;  height: 40px; position: absolute; top: 120px; left: 12%; z-index: 2;}
 body header nav ul{ display: flex; list-style: none; margin-bottom: 60px;}
 body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 20%;}
 body header nav ul li a{ font-family: 'Ubuntu'; font-size: 16px; color: #fff;}
@@ -43,19 +41,19 @@ body header nav ul li a:hover{color: #eb7305;}
 
 body .general_container{ width: 70%; position: relative; top: 0; left: 15%;}
 body .btn_action_section{width: 100%; align-items: center; margin-top: 20px; padding-bottom: 30px;}
-body .btn_action_section .btn_action_container{display: flex; width: 90%; position: relative; top: 0; left: 50px;}
-body .btn_action_section .btn_action_container div{ height: 30px; width: 30%; margin-top: 30px; padding: 10px;}
+body .btn_action_section .btn_action_container{display: flex; width: 90%; position: relative; top: 0; left: 0;}
+body .btn_action_section .btn_action_container div{ height: 30px; width: 20%; margin-top: 30px; padding: 10px;}
 body .btn_action_section .btn_action_container #btn-services{background-color: #eb7305; color: #090024; font-family: 'Ubuntu'; font-size: 1em;  margin: 30px 100px 0 0; line-height: 1.7em; text-align: center;}
 body .btn_action_section .btn_action_container #btn-cotizar{border: 1px solid #eb7305; color: #ffffff; font-family: 'Ubuntu'; font-size: 1em; line-height: 1.7em; text-align: center;}
 body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
 body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
 
-body .services{ /*background-color: #fbeb23;*/ transition-duration: 0.3s; color: #333; padding-bottom: 30px; /*width: 100%; height: 100vh;*/ margin: 100px 0}
+body .services{ /*background-color: #fbeb23;*/ transition-duration: 0.3s; color: #333; padding-bottom: 30px; /*width: 100%; height: 100vh;*/ margin: 100px 0 50px 0;}
 body .services:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
-body .services .services_content{ /*background-color: #34b446;*/ padding: 15px 45px; width: 90%; position: relative; top: 10px; left: 50px; height: auto; }
-body .services .services_content h2{font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; padding-top: 20px; padding-bottom: 30px;}    
+body .services .services_content{ /*background-color: #34b446;*/ padding: 15px 0; width: 100%; position: relative; top: 10px; left: 0; height: auto; }
+body .services .services_content h2{font-family: 'Ubuntu'; font-weight: bold; font-size: 2.5em; padding-top: 20px; padding-bottom: 30px;}    
 body .services .services_content .services_item{ /*background-color: bisque;*/ display: flex; width: 100%; position: relative; top: 20px; right: 0; }
-body .services .services_content .services_item div{ width: 40%; margin: 10px 10px 10px 75px; height: 536px; /*position: relative; top: 0; left: 37px;*/ transition-duration: 0.3s; }
+body .services .services_content .services_item div{ width: 50%; margin: 10px; height: 600px; /*position: relative; top: 0; left: 37px;*/ transition-duration: 0.3s; }
 body .services .services_content div figure{ /*background-color: purple;*/ width: 100%; height: 370px;}
 body .services .services_content .services_item div figure img{width: 100%;}
 body .services .services_content .services_item div h3{ /*background-color: #ffffff;*/ font-family: 'myriad', sans-serif; font-size: 20px; padding: 10px 14px;}
@@ -63,24 +61,25 @@ body .services .services_content .services_item div p{ /*background-color: aquam
 body .services .services_content .services_item div p a{color: #333;} 
 body .services .services_content .services_item .hover_item:hover{box-shadow: 2px 3px 3px black; z-index: 999999;}  
 
-body .about{/*box-shadow: 0 0 1px rgba(0,0,0,1);*/ transition-duration: 0.3s; color: #333; /*padding-bottom: 70px;*/margin-top: 100px; width: 100%; }
+body .about{ width: 100%; height: auto; margin-bottom: 50px; padding-bottom: 100px; }
+ body .about .about_content{ /*background-color: bisque;*/ width: 100%; height: auto; position: relative; top: 0; left: 0; margin: 50px 0; transition-duration: 0.3s; color: #333; padding-bottom: 10%;}
 body .about:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
-body .about .about_content{ /*background-color: red;*/ width: 100%; height: 1000px; position: relative; top: 0; left: 0; margin-bottom: 50px;}
-body .about .about_content h2{ font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; padding: 20px 0 50px 0; text-align: center; position: relative; top: 20px; left: 0;}
-body .about .about_content .about_colum{ background-color: #f5f5f5; /*box-shadow: 0 0 8px rgba(0,0,0,0.6);*/ width: 50%; height: 800px; position: relative; left: 0; top: 20px; }
-body .about .about_content .content_item{ /*background-color: aqua;*/ display: flex; width: 92%; height: 530px; position: relative; bottom: 700px; left: 35px; z-index: 99999999; }
-body .about .about_content .content_item .about_box{ /*background-color: purple;*/ width: 30%; align-content: center; height: 460px; margin-right: 15px; margin-bottom: 15px; position: relative; left: 45px; top: 35px; }
-body .about .about_content .content_item .difuminado{background: linear-gradient(rgba(0,0,0,0) 50%, #090024 /*rgba(0,0,0,0.35)*/); z-index: 99; width: 100%; height: 100%; margin-bottom: 15px; position: absolute; left: 0; top: 0;}
-body .about .about_content .content_item .about_box figure{ /*background-color: yellow;*/ width: 100%; height: 100%;}
+body .about .about_content h2{ font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; text-align: center; padding: 50px 0; }
+body .about .about_content .content_item{ /*background-color:red;*/ display: flex; width: 98%; height: auto /*470px*/; margin: 10% 0 0 10px; }
+body .about .about_content .content_item .devsoft{ /*background-color: purple;*/ width: 50%; height: 450px; align-content: center; }
+body .about .about_content .content_item .profile{ /*background-color: #01b23b;*/ width: 65%; height: 450px; margin-left: 45px;}
+body .about .about_content .content_item .profile p{ /*background-color: #A76A9E;*/ color: #333; font-family: 'myriad', sans-serif; font-size: 18px; line-height: 2em; padding: 0 20px 10px 25px; margin-top: 100px; text-align: left; }
+body .about .about_content .content_item .difuminado{ background: linear-gradient(rgba(0,0,0,0) 50%, #090024); z-index: 99; width: 40%; height: 100%; margin-bottom: 15px; position: absolute; left: 11px; top: 0; }
+body .about .about_content .content_item .about_box figure{ width: 100%; height: 100%;}
 body .about .about_content .content_item .about_box figure img{ width: 100%; height: 100%;}
-body .about .about_content .content_item h3{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #ffffff;  width: 248px; z-index: 99999;}
-body .about .about_content .content_item div p{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #fff;  width: 200px; z-index: 99999;}
-body .about .about_content .aboutplus{background-color: #eb7305; height: 50px; width: 30%; text-align: center; position: absolute; bottom: 150px; left: 35%;}
-body .about .about_content .aboutplus a{ font-family: 'myriad', sans-serif; font-size: 1.1em; font-weight: bold; text-decoration: none; color: #fff; cursor: pointer; position: relative; top: 12px; padding: 10px 25px 10px 25px;}
-body .about .about_content .aboutplus:hover{background-color: #090024;}
+body .about .about_content .content_item .devsoft h3{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #ffffff;  width: 248px; z-index: 999;}
+body .about .about_content .content_item .devsoft p{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #fff;  width: 200px; z-index: 999;}
+body .about .about_content a{ background-color: #eb7305; font-family: 'myriad', sans-serif; font-size: 1.1em; font-weight: bold; text-decoration: none; color: #fff; cursor: pointer; position: relative; top: 105px; left: 34%; padding: 20px 60px; }
+body .about .about_content a:hover{background-color: #090024;}
+body .about .about_content .about_colum{ background-color: #f5f5f5; width: 50%; height: 750px; margin-top: 12%; z-index: -99; position: absolute; top: 0; left: 0; }
   
 body .our_projects{margin-bottom: 100px; width: 100%;}
-body .our_projects h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.7em; padding: 20px 0 50px 0; text-align: center; position: relative; top: 20px; left: 0;}
+body .our_projects h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.5em; padding: 20px 0 50px 0; text-align: center; position: relative; top: 20px; left: 0;}
 body .our_projects .our_projects_container{ background-color: #f5f5f5; width: 100%; height: 40%; margin-top: 50px;}    
 body .our_projects .our_projects_container .container_item{ display: flex; margin: 0 10px 0 10px;}
 body .our_projects .our_projects_container .container_item .projects_item { /*background-color: aqua;*/ width: 25%; height: 435px; margin: 10px 0 10px 0; position: relative; left: 0; top: 0; }
@@ -92,7 +91,7 @@ body .our_projects .our_projects_container .container_item .projects_item h3 a{ 
 
 body .testimonial{ margin-bottom: 100px; width: 100%; }
 body .testimonial h4{ color: #333; font-family: 'myriad', sans-serif; font-size: 1.2em; margin: 20px 20px 22px 20px; text-align: center; }
-body .testimonial h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.7em; text-align: center; margin-bottom: 22px; }
+body .testimonial h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.5em; text-align: center; margin-bottom: 22px; }
 body .testimonial .container{  margin-top: 70px; position: relative; top: 0; left: 5%; width: 90%; }
 body .testimonial .container .testimonial_grid { display: flex; margin: 0 50px 0 50px; padding: 0 12%;}    
 body .testimonial .container .testimonial_grid .card_testimonial{ background-color: #eb7305; width: /*350px;*/ 566px; height: 350px;/*327px;*/ position: relative; margin: 0 0 18px 20px; }    
@@ -103,13 +102,13 @@ body .testimonial .container .testimonial_grid .card_testimonial .card_container
 body .testimonial .container .testimonial_grid .card_testimonial .card_container h3{color: #fff; font-family: 'myriad', sans-serif; font-weight: bold; line-height: 2.1em; margin-left: 25px;}
 body .testimonial .container .testimonial_grid .card_testimonial .card_container p{color: #fff; font-family: 'myriad', sans-serif; font-size: 15px; text-align: left; line-height: 1.5em; padding: 0 25px;}
 
-body .section_quote{ color: #fff; position: relative; top: 100px; left: 0; width: 100%; } 
+body .section_quote{  position: relative; top: 100px; left: 0; width: 100%;  height: auto;} 
 body .section_quote .content_background{ background-color: #f5f5f5; position: relative; top:0; left:0; width: 100%; height: 630px;}
-body .section_quote .content_background .content_quote{display: flex; background-color: #090024; position: relative; top: -60px; left: 27%; width: 45%; height: 500px;}
+body .section_quote .content_background .content_quote{display: flex; background-color: #090024; position: relative; top: -60px; left: 0; width: 75vw; height: 500px; margin-left: 12%;}
 body .section_quote .content_background .content_quote .form_title{ background-color: #eb7305; padding: 20px; width: 45%;}
 body .section_quote .content_background .content_quote h2{ font-family: 'Ubuntu'; margin-bottom: 20px; font-weight: bold; font-size: 1.9em; }
 body .section_quote .content_background .content_quote p{ font-family: 'myriad', sans-serif; margin-bottom: 20px; font-size: 18px;}
-body .section_quote .content_background .content_quote .quote_form{/*background-color: red;*/ margin: 10px 5px 10px 0; padding: 20px; width: 45%;}
+body .section_quote .content_background .content_quote .quote_form{/*background-color: red;*/ margin: 10px 5px 10px 5px; padding: 20px; width: 45%;}
 body .section_quote .content_background .content_quote .quote_form form{ width: 100%; } 
 body .section_quote .content_background .content_quote .quote_form form label{ font-family: 'myriad', sans-serif; font-size: 17px; color: #fff; margin-left: 15px;}
 body .section_quote .content_background .content_quote .quote_form form select{ font-family: 'myriad', sans-serif; font-size: 17px; color: gray;}
@@ -128,7 +127,7 @@ body .fixed_home .whatsapp a::before{ /*background-color: #4d5566;*/ border-radi
 @keyframes bajar{0%{bottom: 0px;} 80%{bottom: 0px;} 100%{bottom: -50px;}}
 @keyframes subir{0%{bottom: -38px;} 10%{bottom: 0px;} 80%{bottom: 0px;} 100%{bottom: -38px;}}
 #id_galletas:target{display: none;}
-.galletas{font-family: 'Ubuntu'; width: 100%; height: 43px; margin: 0 auto; padding-left: 1%; padding-top: 5px; font-size: 1.2em; clear: both; font-weight: strong; color: #fff; bottom: 0px; position: fixed; left: 0px; background-color: #eb7305; opacity: 0.7; filter: alpha(opacity=70); transition: bottom 1s; box-shadow: 3px 3px 1px rgba(50, 50, 50, 0.5); z-index: 99999999;}
+.galletas{font-family: 'Ubuntu'; width: 100%; height: 43px; margin: 0 auto; padding-left: 1%; padding-top: 5px; font-size: 1em; clear: both; font-weight: strong; color: #fff; bottom: 0px; position: fixed; left: 0px; background-color: #eb7305; opacity: 0.7; filter: alpha(opacity=70); transition: bottom 1s; box-shadow: 3px 3px 1px rgba(50, 50, 50, 0.5); z-index: 99999999;}
 .galletas a{color: #090024;}
 .galletas:hover{bottom: 0px;}
 #galleta1{background-color: #eb7305; display: inline; font-size: 15px; height: 30px; opacity: 0.95; position: absolute; left: 1%; top:-30px; padding-left: 25px; padding-right: 25px; border-top-right-radius: 15px; border-top-left-radius: 15px; box-shadow: 3px 3px 1px rgba(50, 50, 50, 0.5);}
@@ -159,6 +158,95 @@ body footer .contentec_footer .red_social a:nth-child(2)::before{content: "\ea92
 body footer .contentec_footer .red_social a:nth-child(3)::before{content: "\ea93";}
 body footer .contentec_footer .red_social a:nth-child(4)::before{content: "\eaca";}
 body footer .contentec_footer .footer_copy{ width: 30%; font-family: 'myriad', sans-serif; font-size: .8em; font-weight: lighter; letter-spacing: .1em; position: relative; top: 0; left: 5%; line-height: 3;}
+
+}
+
+@media only screen and (min-width: 1920px){
+    body header .logo{ /*background-color: red;*/ display: flex; width: 100%; height: auto; z-index: 2; position: absolute; top: 0; left: 0;}
+body header .logo figure{ /*background-color: yellow;*/ width: 120px;height: 100%; margin-left: 15%;}
+body header .logo figure img{/*background-color: purple;*/ width: 100%; height: 100%;}
+body header .logo figure:hover{cursor: pointer;}
+body header .logo .info_header{ /*background-color: #01b23b;*/ margin: 0 25% 0 16%; padding: 37px 25px; text-align: center; }
+body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold; font-size: 18px; }
+body header .logo .red_social{ /*background-color: #A76A9E;*/ width: 17%; height: 50px; position: absolute; top: 26px; right: 30px; margin-right: 11%; }
+body header .logo .red_social a{width: 15%; height: 40px;display: inline-block; margin-left: 8px; padding: 8px 0 0 8px; }
+body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.5em; }
+body header .logo .red_social a:nth-child(1)::before{content: "\ea90";}
+body header .logo .red_social a:nth-child(2)::before{content: "\ea92";}
+body header .logo .red_social a:nth-child(3)::before{content: "\ea93";}
+body header .logo .red_social a:nth-child(4)::before{content: "\eaca";}
+body header .logo .red_social a:hover::before{color: #ffffff;}
+body header .logo .header_content { width: 100%; position: absolute; top: 100%; transform: translateY(100%);  left: 0; margin-left: 15%; }
+body header .logo .header_content h1{ font-family: 'Ubuntu'; font-size: 70px; margin-bottom: 0; }
+body header .logo .header_content p{ font-family: 'myriad', sans-serif; font-size: 1.5rem; display: block; padding-bottom: 2rem; }
+
+body .general_container{ width: 70%; position: relative; top: 0; left: 15%;}
+body .btn_action_section{width: 100%; align-items: center; margin-top: 20px; padding-bottom: 30px;}
+body .btn_action_section .btn_action_container{display: flex; width: 90%; position: relative; top: 0; left: 0;}
+body .btn_action_section .btn_action_container div{ height: 30px; width: 15%; margin-top: 30px; padding: 10px;}
+body .btn_action_section .btn_action_container #btn-services{background-color: #eb7305; color: #090024; font-family: 'Ubuntu'; font-size: 1em;  margin: 30px 100px 0 0; line-height: 1.7em; text-align: center;}
+body .btn_action_section .btn_action_container #btn-cotizar{border: 1px solid #eb7305; color: #ffffff; font-family: 'Ubuntu'; font-size: 1em; line-height: 1.7em; text-align: center;}
+body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
+body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
+
+body .services{ /*background-color: #fbeb23;*/ transition-duration: 0.3s; color: #333; padding-bottom: 30px; width: 100%; height: auto; margin: 100px 0 50px 0;}
+body .services:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
+body .services .services_content{ /*background-color: #34b446;*/ padding: 15px 0; width: 100%; position: relative; top: 10px; left: 0; height: auto;}
+body .services .services_content h2{font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; padding-top: 20px; padding-bottom: 30px;}    
+body .services .services_content .services_item{ /*background-color: bisque;*/ display: flex; width: 100%; position: relative; top: 20px; left: 0; }
+body .services .services_content .services_item div{/*background-color: yellow;*/ width: 35%; margin: 10px 15px; height: 570px; position: relative; top: 0; left: 13%; transition-duration: 0.3s; }
+body .services .services_content div figure{ /*background-color: purple; width: 100%;*/ height: 370px; /*margin-bottom: 100px;*/ }
+body .services .services_content .services_item div figure img{width: 100%;}
+body .services .services_content .services_item div h3{ /*background-color: #ffffff;*/ font-family: 'myriad', sans-serif; font-size: 20px; padding: 10px 14px;}
+body .services .services_content .services_item div p{ /*background-color: aquamarine;*/ font-family: 'myriad', sans-serif; font-size: 16px; line-height: 1.5em; padding: 10px;}
+body .services .services_content .services_item div p a{color: #333;} 
+body .services .services_content .services_item .hover_item:hover{box-shadow: 2px 3px 3px black; z-index: 999999;}  
+
+body .about{ width: 100%; height: auto; margin-bottom: 50px; padding-bottom: 100px; }
+ body .about .about_content{ /*background-color: bisque;*/ width: 100%; height: auto; position: relative; top: 0; left: 0; margin: 50px 0; transition-duration: 0.3s; color: #333; padding-bottom: 10%;}
+body .about:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
+body .about .about_content h2{ font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; text-align: center; padding: 50px 0; }
+body .about .about_content .content_item{ /*background-color:red;*/ display: flex; width: 98%; height: auto /*470px*/; margin: 10% 0 0 10px; }
+body .about .about_content .content_item .devsoft{ /*background-color: purple;*/ width: 35%; height: 550px; align-content: center; }
+body .about .about_content .content_item .profile{ /*background-color: #01b23b;*/ width: 65%; height: 550px; margin-left: 45px;}
+body .about .about_content .content_item .profile p{ /*background-color: #A76A9E;*/ color: #333; font-family: 'myriad', sans-serif; font-size: 18px; line-height: 2em; padding: 0 20px 10px 25px; margin-top: 200px; text-align: left; }
+body .about .about_content .content_item .difuminado{ background: linear-gradient(rgba(0,0,0,0) 50%, #090024); z-index: 99; width: 33%; height: 100%; margin-bottom: 15px; position: absolute; left: 11px; top: 0; }
+body .about .about_content .content_item .about_box figure{ width: 100%; height: 100%;}
+body .about .about_content .content_item .about_box figure img{ width: 100%; height: 100%;}
+body .about .about_content .content_item .devsoft h3{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #ffffff;  width: 248px; z-index: 999;}
+body .about .about_content .content_item .devsoft p{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #fff;  width: 200px; z-index: 999;}
+body .about .about_content a{ background-color: #eb7305; font-family: 'myriad', sans-serif; font-size: 1.1em; font-weight: bold; text-decoration: none; color: #fff; cursor: pointer; position: relative; top: 105px; left: 40%; padding: 20px 60px; }
+body .about .about_content a:hover{background-color: #090024;}
+body .about .about_content .about_colum{ background-color: #f5f5f5; width: 50%; height: 900px; margin-top: 9%; z-index: -99; position: absolute; top: 0; left: 0; }
+
+body .testimonial{ margin-bottom: 100px; width: 100%; }
+body .testimonial h4{ color: #333; font-family: 'myriad', sans-serif; font-size: 1.5em; margin: 20px 20px 22px 20px; text-align: center; }
+body .testimonial h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.7em; text-align: center; margin-bottom: 22px; }
+body .testimonial .container{  margin-top: 70px; position: relative; top: 0; left: 5%; width: 90%; }
+body .testimonial .container .testimonial_grid { display: flex; margin: 0 50px 0 50px; padding: 0 12%;}    
+body .testimonial .container .testimonial_grid .card_testimonial{ background-color: #eb7305; width: /*350px;*/ 560px; height: 350px;/*327px;*/ position: relative; margin: 0 0 18px 20px; }    
+body .testimonial .container .testimonial_grid .card_testimonial .card_container{background-color: #090024; position: absolute; left: 0; top: 0; width: 100%; /*566px;*/ height: 345px;/*320px;*/}
+body .testimonial .container .testimonial_grid .card_testimonial .card_container figure{ border-radius: 50px; background-color: aliceblue; margin: 25px 0 25px 25px; width: 70px; height: 70px;}
+body .testimonial .container .testimonial_grid .card_testimonial .card_container figure img{ border-radius: 50px; width: 100%; height: 100%; }
+body .testimonial .container .testimonial_grid .card_testimonial .card_container h4{color: #eb7305; font-family: 'myriad', sans-serif; font-weight: bold; margin: 0 0 15px 25px; text-align: left;}
+body .testimonial .container .testimonial_grid .card_testimonial .card_container h3{color: #fff; font-family: 'myriad', sans-serif; font-weight: bold; line-height: 2.1em; margin-left: 25px;}
+body .testimonial .container .testimonial_grid .card_testimonial .card_container p{color: #fff; font-family: 'myriad', sans-serif; font-size: 15px; text-align: left; line-height: 1.5em; padding: 0 25px;}
+
+
+body .section_quote{  position: relative; top: 100px; left: 0; width: 100%;  height: auto;} 
+body .section_quote .content_background{ background-color: #f5f5f5; position: relative; top:0; left:0; width: 100%; height: 630px;}
+body .section_quote .content_background .content_quote{display: flex; background-color: #090024; position: relative; top: -60px; left: 0; width: 65vw; height: 500px; margin-left: 17%; padding-right: 10px;}
+body .section_quote .content_background .content_quote .form_title{ background-color: #eb7305; padding: 20px; width: 100%;}
+body .section_quote .content_background .content_quote h2{ font-family: 'Ubuntu'; margin-bottom: 20px; font-weight: bold; font-size: 2em; }
+body .section_quote .content_background .content_quote p{ font-family: 'myriad', sans-serif; margin-bottom: 20px; font-size: 18px;}
+body .section_quote .content_background .content_quote .quote_form{ /*background-color: red;*/ margin: 10px 5px 10px 15px; padding: 20px; width: 100%;}
+body .section_quote .content_background .content_quote .quote_form form{ width: 100%; } 
+body .section_quote .content_background .content_quote .quote_form form label{ font-family: 'myriad', sans-serif; font-size: 17px; color: #fff; margin-left: 15px;}
+body .section_quote .content_background .content_quote .quote_form form select{ font-family: 'myriad', sans-serif; font-size: 17px; color: gray;}
+body .section_quote .content_background .content_quote .quote_form form input{ font-family: 'myriad', sans-serif; font-size: 15; }
+body .section_quote .content_background .content_quote .quote_form form input, select, textarea{ border: none; border-bottom: 2px solid gray; display: block; font-weight: bold; margin: 10px 20px 20px 0; width: 95%; height: 45px; margin: 10px 15px 20px 10px; padding-left: 10px;} 
+body .section_quote .content_background .content_quote .quote_form form textarea{ height: 90px; font-size: 15px; padding-top: 5px;}
+body .section_quote .content_background .content_quote .quote_form form button{ background-color: #eb7305; color: #fff; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; margin-left: 10px; padding: 12px 0; width: 50%; }
 
 }
 
@@ -225,22 +313,44 @@ body .services .services_content .services_item div p{ /*background-color: aquam
 body .services .services_content .services_item div p a{color: #333;} 
 body .services .services_content .services_item .hover_item:hover{box-shadow: 2px 3px 3px black; z-index: 999999;}  
 
-body .about{/*box-shadow: 0 0 1px rgba(0,0,0,1);*/  width: 100%; height: 1000px; }
-body .about .about_content{ /*background-color: bisque;*/ width: 100%; height: auto; position: relative; top: 0; left: 0; margin: 50px 0; transition-duration: 0.3s; color: #333;}
+/*
+
+body .about{*box-shadow: 0 0 1px rgba(0,0,0,1);*  width: 100%; height: 1000px; }
+body .about .about_content{ *background-color: bisque;* width: 100%; height: auto; position: relative; top: 0; left: 0; margin: 50px 0; transition-duration: 0.3s; color: #333;}
 body .about:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
 body .about .about_content h2{ font-family: 'Ubuntu'; font-weight: bold; font-size: 2.3em; text-align: center; padding: 30px 0; }
-body .about .about_content .about_colum{ background-color: #f5f5f5; /*box-shadow: 0 0 8px rgba(0,0,0,0.6);*/ width: 50%; height: 750px; margin-top: 30px; }
-body .about .about_content .content_item{ /*background-color:red;*/ display: flex; width: 90%; height: auto /*470px*/; margin-left: 47px; position: relative; bottom: 650px; left: 0; z-index: 99999999; }
-body .about .about_content .content_item .devsoft{ /*background-color: purple;*/ width: 40%; height: 400px; align-content: center; }
-body .about .about_content .content_item .profile{ /*background-color: #01b23b;*/ width: 65%; height: 400px; margin-left: 45px;}
-body .about .about_content .content_item .profile p{ /*background-color: #A76A9E;*/ color: #333; font-family: 'myriad', sans-serif; font-size: 16px; line-height: 1.5em; padding: 0 20px 10px 25px; margin-top: 100px; text-align: left; }
-body .about .about_content .content_item .difuminado{ background: linear-gradient(rgba(0,0,0,0) 50%, #090024 /*rgba(0,0,0,0.35)*/); z-index: 99; width: 36%; height: 100%; margin-bottom: 15px; position: absolute; left: 0; top: 0; }
+body .about .about_content .about_colum{ background-color: #f5f5f5; *box-shadow: 0 0 8px rgba(0,0,0,0.6);* width: 50%; height: 750px; margin-top: 30px; }
+body .about .about_content .content_item{ *background-color:red;* display: flex; width: 90%; height: auto *470px*; margin-left: 47px; position: relative; bottom: 650px; left: 0; z-index: 99999999; }
+body .about .about_content .content_item .devsoft{ *background-color: purple;* width: 40%; height: 400px; align-content: center; }
+body .about .about_content .content_item .profile{ *background-color: #01b23b;* width: 65%; height: 400px; margin-left: 45px;}
+body .about .about_content .content_item .profile p{ *background-color: #A76A9E;* color: #333; font-family: 'myriad', sans-serif; font-size: 16px; line-height: 1.5em; padding: 0 20px 10px 25px; margin-top: 100px; text-align: left; }
+body .about .about_content .content_item .difuminado{ background: linear-gradient(rgba(0,0,0,0) 50%, #090024 *rgba(0,0,0,0.35)*); z-index: 99; width: 36%; height: 100%; margin-bottom: 15px; position: absolute; left: 0; top: 0; }
 body .about .about_content .content_item .about_box figure{ width: 100%; height: 100%;}
 body .about .about_content .content_item .about_box figure img{ width: 100%; height: 100%;}
 body .about .about_content .content_item .devsoft h3{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #ffffff;  width: 248px; z-index: 99999;}
 body .about .about_content .content_item .devsoft p{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #fff;  width: 200px; z-index: 99999;}
 body .about .about_content a{ background-color: #eb7305; font-family: 'myriad', sans-serif; font-size: 1.1em; font-weight: bold; text-decoration: none; color: #fff; cursor: pointer; position: absolute; bottom:500px; left: 29%; padding: 20px 25px; }
 body .about .about_content a:hover{background-color: #090024;}
+
+*/
+
+body .about{ width: 100%; height: auto; margin-bottom: 50px; padding-bottom: 100px; }
+ body .about .about_content{ /*background-color: bisque;*/ width: 100%; height: auto; position: relative; top: 0; left: 0; margin: 50px 0; transition-duration: 0.3s; color: #333; padding-bottom: 10%;}
+body .about:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
+body .about .about_content h2{ font-family: 'Ubuntu'; font-weight: bold; font-size: 2.7em; text-align: center; padding: 50px 0; }
+body .about .about_content .content_item{ /*background-color:red;*/ display: flex; width: 98%; height: auto /*470px*/; margin: 10% 0 0 10px; }
+body .about .about_content .content_item .devsoft{ /*background-color: purple;*/ width: 50%; height: 450px; align-content: center; }
+body .about .about_content .content_item .profile{ /*background-color: #01b23b;*/ width: 65%; height: 450px; margin-left: 45px;}
+body .about .about_content .content_item .profile p{ /*background-color: #A76A9E;*/ color: #333; font-family: 'myriad', sans-serif; font-size: 18px; line-height: 2em; padding: 0 20px 10px 25px; margin-top: 100px; text-align: left; }
+body .about .about_content .content_item .difuminado{ background: linear-gradient(rgba(0,0,0,0) 50%, #090024); z-index: 99; width: 40%; height: 100%; margin-bottom: 15px; position: absolute; left: 11px; top: 0; }
+body .about .about_content .content_item .about_box figure{ width: 100%; height: 100%;}
+body .about .about_content .content_item .about_box figure img{ width: 100%; height: 100%;}
+body .about .about_content .content_item .devsoft h3{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #ffffff;  width: 248px; z-index: 999;}
+body .about .about_content .content_item .devsoft p{ font-family: 'myriad', sans-serif; position: relative; bottom: 90px; left: 40px; color: #fff;  width: 200px; z-index: 999;}
+body .about .about_content a{ background-color: #eb7305; font-family: 'myriad', sans-serif; font-size: 1.1em; font-weight: bold; text-decoration: none; color: #fff; cursor: pointer; position: relative; top: 105px; left: 34%; padding: 20px 60px; }
+body .about .about_content a:hover{background-color: #090024;}
+body .about .about_content .about_colum{ background-color: #f5f5f5; width: 50%; height: 750px; margin-top: 12%; z-index: -99; position: absolute; top: 0; left: 0; }
+
 
 body .our_projects{margin-bottom: 100px; width: 100%;}
 body .our_projects h2{ font-family: 'Ubuntu'; color: #333; font-weight: bold; font-size: 2.3em; padding: 20px 0 50px 0; text-align: center; position: relative; top: 20px; left: 0;}
