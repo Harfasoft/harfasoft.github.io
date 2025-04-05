@@ -43,12 +43,13 @@
 <body>  
     <header>
         <div class="header_video" id="header">
-         <video src="video/sitiowebHarfasoft.mp4" type="video/mp4" autoplay="1" loop muted="true" preload="metadata">
+         <video src="video/sitiowebHarfasoft.mp4" type="video/mp4" autoplay loop muted preload="metadata">
             Tu navegador no admite el elemento <code>video</code>.
           </video> 
         </div>
         <div class="header_overlay"></div>
-        <div class="logo">           
+        <div class="logo">        
+            <!-- <a class="image" href="test-index.html"> </a> -->
                 <figure> <a class="image" href="index.html"><img src="img/Logo.svg" /> </a>  </figure>
             <div class="info_header">
                 <p><a href="tel:+573146014133">¡Llámanos!: +57 (314) 601 41 33</a></p>
@@ -86,7 +87,68 @@
         </nav>
   
     </header>
-   <section class="services" id="services_id">
+    <!--Section slider   poster="img/developbackend.png"  <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+  Tu navegador no admite el elemento <code>video</code>.
+</video>
+-->  
+      
+    <!--
+    <section id="slider">
+        <ul>
+            <li>
+                <figure><img src="img/slider/banner1.jpg" alt="primera imagen">
+                    <h1>DESARROLLAMOS SOFTWARE A LA MEDIDA</h1>
+                </figure>
+            </li>
+            <li>
+                <figure><img src="img/slider/banner2.jpg" alt="imagen nosotros">
+                    <h2>DESARROLLAMOS TU SITIO WEB</h2>
+                </figure>
+            </li>
+            <li>
+                <figure><img src="img/slider/banner3.jpg" alt="nuestros servicios">
+                    <h2>SOPORTE TÉCNICO DE COMPUTADORAS</h2>
+                </figure>
+            </li>
+            <li>
+                <figure> <img src="img/slider/banner3.jpg" alt="nuestros servicios">
+                    <h2>INSTALACIÓN DE REDES INFORMÁTICAS</h2>
+                </figure>
+            </li>
+        </ul>
+        <ol id="indicator">
+            <li slider-item="1"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            <li slider-item="2"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            <li slider-item="3"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            <li slider-item="4"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            
+        </ol>
+        <section id="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></section>
+        <section id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></section>
+    </section>  -->
+    <!-- <li slider-item="5"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            <li slider-item="6"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li> -->
+
+  <!--  <div class="general_container">
+    <section class="btn_action_section">
+       <article class="btn_action_container">
+        <div class="btn_home" id="btn-services">Nuestros Servicios</div>
+        <div class="btn_home" id="btn-cotizar">Conctatanos</div>
+        </article>
+    </section>
+    <section class="home">
+        <article class="home_container">
+            <div class="boxe_one">
+                <h4>Desarrollamos ideas, creamos realidades</h4>
+                <h2>Soluciones informáticas a la medida de tu proyecto</h2>
+            </div>
+            <figure class="home_img"><img src="img/Logo.svg"></figure>
+        </article>
+    </section>  
+</div>  -->
+
+
+    <section class="services" id="services_id">
         <article class="services_content">
             <div class="general_container">
             <h2>Nuestros servicios</h2>            
@@ -129,11 +191,12 @@
             </div>
             </div>
         </article>
-    </section> 
+    </section>
+
+  
 <section class="about" id="about_id">
         <article class="about_content">
-            <h2>¿Quienes Somos?</h2>   
-            <div class="about_colum"></div>         
+            <h2>¿Quienes Somos?</h2>            
             <div class="general_container">
             <div class="content_item">
                 <div class="devsoft about_box">
@@ -148,10 +211,23 @@
                 <p>
                     Ingeniero de Software y Sistemas Informáticos, con 2 años de experiencia en <strong>liderazgo de equipos de desarrollo de software</strong>, 9 años de experiencia en el desarrollo de software utilizando los lenguajes de programación <strong>Java</strong>, <strong>JavaScript</strong>, <strong>SQL</strong>, así como <strong>HTML</strong>, <strong>CSS</strong> y 7 años de experiencia en <strong>soporte técnico informático.</strong>
                 </p>
-            </div>           
             </div>
-            <a href="page/about.html">¿Quieres Saber Mas Sobre Nosotros?</a>
-        </div>                      
+
+                <!-- <p>Desarrollamos software a la medida de acuerdo con la necesidad del proyecto, generando valor a nuestros clientes, automatizando y optimizando sus procesos repetitivos.</p> -->
+             <!--
+                <div class="desing about_box">
+                    <figure class="graphic_designer">
+                      <img src="img/perfil-inge-2.jpg" alt="image of develop">
+                    </figure>
+                    <h3>Andres Torres</h3>
+                    <p>Diseñador Grafico</p>
+                    <div class="difuminado"></div>
+                </div>       -->         
+            </div>
+        </div>
+            <!-- <div class="aboutplus"></div>  -->
+                    <a href="page/about.html">¿Quieres Saber Mas Sobre Nosotros?</a>
+                    <div class="about_colum"></div>
         </article>
     </section>
 
@@ -288,7 +364,7 @@
         <div class="whatsapp"><a target="_blank" rel="noreferrer" href="https://wa.me/message/7K4Z3ITHTIT2J1"></a></div>
     </section>
     <section class="galletas" id="id_galletas">
-        Este sitio web utiliza cookies, puedes consultar nuestra <a href="#">política de cookies</a>. Si continuas navegando estás aceptando la <button id="aceptar_cookies">Aceptar</button>
+        Este sitio web utiliza cookies, puedes consultar nuestra <a href="#">política de cookies</a>. Si continuas navegando estás aceptandola <button id="aceptar_cookies">Aceptar</button>
         <div id="galleta1" onmouseover="document.getElementById('id_galletas').style.bottom= '0px';">Política de cookies</div>
     </section>
     <footer>
@@ -324,7 +400,7 @@
             <a href="#"></a>
         </div>
         <div class="footer_copy">
-            <p>&copy; <span id="year"></span> All rights reserved Privacity Policy Harfasoft</p>
+            <p>&copy; 2025 All rights reserved Privacity Policy Harfasoft</p>
             </div>
         </div>
         </div>
@@ -338,13 +414,6 @@
   gtag('js', new Date());
 
   gtag('config', 'G-Y966CQSQ2Z');
-</script>
-<script>
-    // Obtén el año actual
-    const currentYear = new Date().getFullYear();
-
-    // Asigna el año al elemento con id="year"
-    document.getElementById('year').textContent = currentYear;
 </script>
 </body>
 </html>
