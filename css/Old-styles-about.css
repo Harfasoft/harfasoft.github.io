@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'myriad', sans-serif;
+    src:  url('fonts/MyriadProRegular.ttf');    
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+*{margin: 0; padding: 0; box-sizing: content-box;}
+body,a{color: #4d5566; /*#090024*/; /*font-size: 18px;*/ text-decoration: none; overflow-x: hidden;}
+
+body header{ align-items: center; /*background-color: red;*/ display: flex; width: 100%; height: 720px; position: relative; margin-bottom: 30px;}
+body header .header_video{ position: absolute; top: 0; left: 0; /*height: 100vh;*/ width: 100%; overflow: hidden; }
+body header figure{ min-width: 100%; /*min-height: 100%;*/ }
+body header figure img{width: 100%; height: 100%;}
+/*body header .header_overlay{ background-color: #090024; height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70;}
+body header .header_content{ z-index: 2; position: relative; top: 0; left: 15%;}
+body header .header_content h1{ font-family: 'Ubuntu'; font-size: 60px; margin-bottom: 0; }
+body header .header_content p{ font-family: 'myriad', sans-serif; font-size: 1.5rem; display: block; padding-bottom: 2rem; }*/
+
+body header .logo_about{/*background-color: red;*/ display: flex; width: 70%; height: 100px; z-index: 2; position: absolute; top: 0; left: 15%;}
+body header .logo_about .image{ /*background-color: #01b23b;*/ width: 120px; height: 100%; margin-left: 40px; /*overflow: hidden;*/ }
+body header .logo_about .figure_logo{ /*background-color: yellow;*/ width: 120px; height: 100%; }
+body header .logo_about .figure_logo img{ /*background-color: purple;*/ width: 100%; height: 100%;}
+body header .logo_about .figure_logo:hover{cursor: pointer;}
+body header .logo_about .info_header_1{ /*width: 50px; height: 100%; background-color: #eb7305;*/ margin: 0 30% 0 25%; padding: 37px; text-align: center; z-index: 2;}
+body header .logo_about .info_header_1 a{ font-family: 'myriad', sans-serif; color:#ffffff; font-weight: bold; font-size: 18px; }
+body header .logo_about .red_social{ width: 20%; position: absolute; top: 28px; right: 0; height: 40px; }
+body header .logo_about .red_social a{width: 10%; height: 40px;display: inline-block;position: relative; top: 5px; left: 30px; margin-left: 15px; padding: 2px; }
+body header .logo_about .red_social a::before{ color: #ffffff; font-family: "icomoon"; text-decoration: none; font-size: 1.5em; }
+body header .logo_about .red_social a:nth-child(1)::before{content: "\ea90";}
+body header .logo_about .red_social a:nth-child(2)::before{content: "\ea92";}
+body header .logo_about .red_social a:nth-child(3)::before{content: "\ea93";}
+body header .logo_about .red_social a:nth-child(4)::before{content: "\eaca";}
+/* body header .logo_about .red_social a:hover::before{color: #ffffff;} */
+body header .header_hr{ background-color: #4d5566; height: 2px; position: absolute; top: 100px; left: 0; width: 100vw; z-index: 2;}
+
+body header .logo_about #show_menu{display: none; background-color: aqua; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 10px; right: 16px;}
+body header .logo_about #show_menu img{width: 100%;}
+body header .logo_about #show_menu::before{content: '|||'; transform: rotate(90deg);font-size: 20px;font-weight: bolder; position: absolute; top: 14px; right: 14px;}
+body header .logo_about #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
+body header .logo_about #close_menu{color:#eb7305; display: none; background-color: aquamarine; width: 50px; height: 50px; position: absolute; top: 10px; right: 16px;}
+body header .logo_about #close_menu::before{content: 'X'; font-size: 20px; font-weight: bolder; position: relative; top: 14px; right: -18px;}
+body header .logo_about #close_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}  
+    
+body header nav { width: 70%;  height: 40px; position: absolute; top: 120px; left: 15%; z-index: 2;}
+body header nav ul{ display: flex; list-style: none; margin-bottom: 60px;}
+body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 20%;}
+body header nav ul li a{ font-family: 'Ubuntu'; font-size: 16px; color: #fff;}
+body header nav ul li a:hover{color: #eb7305;}
+
+/*body .fixed_home .return a::before{ background-color: #4d5566; color: #eb7305; }*/
+
+body .general_container{ /*background-color: aqua; margin-top: 100px; */}
+body section article{ width: 100%; height: auto; /*background-color: #090024;*/ }
+
+/*body section article .item_container div{ width: 90%; height: auto; padding: 20px; line-height: 1.5; text-align: left; font-size: 18px; color: #fff;}*/
+body section article .about_us{ /*background-color: rebeccapurple;*/  margin-bottom: 100px; width: 100%; display: flex;}
+body section article .about_us h2{ /*background-color: yellow;*/ font-family: 'Ubuntu'; font-size: 60px; width: 40%; line-height: 3.5; padding-left: 20px; margin-bottom: 0;  }
+body section article .about_us p{ /*background-color: wheat;*/ font-family: 'Ubuntu', sans-serif; font-size: 1.3rem; line-height: 1.5; text-align: left; width: 55%; padding: 2rem; }
+body section article .item_container{ display: flex; margin: 100px 0;}
+body section article .our_mission{ /*background-color: red;*/  margin-right: 15px;}
+body section article .our_mission h2{/*background-color: yellow;*/ color: #eb7305; font-family: 'Ubuntu'; font-size: 40px; line-height: 1; padding-left: 20px;  margin-bottom: 0; }
+body section article .our_mission p{ /*background-color: white;*/ font-family: 'myriad', sans-serif; font-size: 1.3rem; line-height: 1.5; text-align: left; padding: 2rem; }
+body section article .our_vision{ /*background-color: brown;*/ }
+body section article .our_vision h2{/*background-color: yellow;*/ color: #090024; font-family: 'Ubuntu'; font-size: 40px; line-height: 1; padding-left: 20px;  margin-bottom: 0; }
+body section article .our_vision p{ /*background-color:blanchedalmond;*/ font-family: 'myriad', sans-serif; font-size: 1.3rem; line-height: 1.5; text-align: left; padding: 2rem; }
+body section article .our_values{ /*background-color: hotpink;*/ margin-bottom: 100px; width: 100%; display: flex; margin-bottom: 100px;}
+body section article .our_values h2{ /*background-color: yellow;*/ font-family: 'Ubuntu'; font-size: 50px; width: 50%; line-height: 5; padding-left: 20px;  margin-bottom: 0; }
+body section article .our_values p{ /*background-color: wheat;*/ font-family: 'Ubuntu', sans-serif; font-size: 1.3rem; line-height: 1.5; text-align: left; padding: 2rem; }
+body section article .our_values ul li{ /*background-color: wheat;*/ font-family: 'myriad', sans-serif; font-size: 1rem; line-height: 1.5; list-style: none; text-align: left; padding: 1rem 2rem; }

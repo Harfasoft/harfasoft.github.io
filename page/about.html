@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+            <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WSC82X8J');</script>
+    <!-- End Google Tag Manager -->
     <meta http-equiv="X-UA-Compatible" content="IE=5" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=8" />
@@ -8,7 +15,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="../img/faviIcon.png" rel="shortcut icon">
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
+    <meta property="og:title" content="HARFASOFT S.A.S" />
+    <meta property="og:description" content="Desarrollo de software y paginas web, Soporte técnico en informática" />
+    <meta property="og:image" content="https://harfasoft.com/img/Logo.svg"> 
     <meta name="title" content="::HARFASOFT::" />
     <meta name="author" content="Alex-Herrera">
     <meta name="owner" content="HARFASOFT S.A.S">
@@ -31,142 +41,154 @@
         @import url("../css/icomoon.css");
     </style>    
     </head>
-    <body>
-        <header>
-            <div class="header_video" id="header">
-            <figure>
-                <img src="../img/banner3.jpg">
-            </figure>
+    <body class="about">        
+            <header>
+                <div class="header_video" id="header">
+                <figure>
+                    <img src="../img/banner3.jpg" alt="banner"/>
+                </figure>
+                </div>     
+                   <div class="logo">           
+                           <figure class="logo_image"> <a class="image" href="../index.html"><img src="../img/Logo.svg" alt="logo-empresa"/></a></figure>
+                       <div class="info_header">
+                           <p><a href="tel:+573146014133">¡Llámanos!: +57 (314) 601 41 33</a></p>
+                       </div>
+                       <div id="show_menu" onclick="showMenu()"></div>
+                       <div id="close_menu" onclick="showMenu()"></div>
+                       <div class="red_social">
+                       <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61565442406411"></a>
+                       <a href="#"></a>            
+                       <a target="_blank" rel="noreferrer" href=" https://wa.me/message/7K4Z3ITHTIT2J1"></a>            
+                       <a href="#"></a>
+                   </div>
+                   <div class="header_content">
+                       <h1>Servicios y Soluciones Tecnológicas</h1>
+                       <p>Desarrollamos ideas, creamos realidades</p>
+                       <!-- <div class="btn_action_section">
+                           <div class="btn_action_container">
+                       <div class="btn_home" id="btn-services"><a href="#services_id" onclick="getDeviceDimensions()">Nuestros Servicios</a></div>
+                   <div class="btn_home" id="btn-cotizar"><a href="#quote">Conctatanos</a></div>
+                   </div>
+               </div>-->
+                   </div>
+                   </div>
+                   <div class="header_hr">
+                  <hr/>
+                   </div>
+                   <nav class="menu" id="card_menu">
+                       <ul>
+                           <li><a href="../home">Inicio</a></li>
+                           <li><a href="#our_projects">Proyectos</a></li>
+                           <li><a href="#about_id">Quienes Somos</a></li>
+                           <li><a href="#services_id">Servicios</a></li>
+                           <li><a href="#quote">Cotizar</a></li>
+                       </ul>
+                   </nav>  
+            </header>
+            <section class="general_container">
+                <article>
+                    
+                    <div class="about_us" id="id_about">
+                        <h2>Quienes Somos</h2>
+                        <p>Somos una empresa de tecnología, dedicada al <strong>desarrollo de software, páginas web, soporte técnico en informática y cableado estructurado</strong>. Nuestro objetivo es brindar soluciones tecnológicas a la medida de nuestros clientes, con calidad y eficiencia.
+                        Contamos con un equipo de profesionales altamente capacitados, con amplia experiencia en el sector tecnológico, comprometidos con la satisfacción de nuestros clientes.
+                        En Harfasoft, trabajamos con tecnología de punta, para ofrecer soluciones innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes.
+                        Si buscas una empresa de tecnología confiable, eficiente y comprometida con la satisfacción de sus clientes, Harfasoft es tu mejor opción.</p>
+                    </div>
+                    <div class="item_container">
+                    <div class="our_mission">
+                        <h2>Nuestra Misión</h2>
+                        <p>Brindar soluciones tecnológicas innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes, con calidad y compromiso.</p>
+                    </div>                
+                    <div class="our_vision">
+                        <h2>Nuestra Visión</h2>
+                        <p>Ser una empresa líder en el sector tecnológico, reconocida por la calidad y eficiencia de sus soluciones, y por la satisfacción de sus clientes.</p>
+                    </div>
+                    </div>
+                    <div class="our_values">
+                        <h2>Nuestros Valores</h2>
+                        <div>
+                        <p>En Harfasoft, trabajamos con los siguientes valores:</p>
+                        <ul>
+                            <li><strong>Calidad:</strong> Nos esforzamos por ofrecer soluciones tecnológicas de calidad, que cumplan con las expectativas de nuestros clientes.</li>
+                            <li><strong>Compromiso:</strong> Estamos comprometidos con la satisfacción de nuestros clientes, brindando soluciones eficientes y a la medida de sus necesidades.</li>
+                            <li><strong>Innovación:</strong> Trabajamos con tecnología de punta, para ofrecer soluciones innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes.</li>
+                            <li><strong>Ética:</strong> Nos regimos por principios éticos y morales, en todas nuestras acciones y decisiones.</li>
+                            <li><strong>Trabajo en equipo:</strong> Fomentamos el trabajo en equipo, la colaboración y el respeto mutuo, para lograr los objetivos de la empresa.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                </article>
+            </section>    
+            
+        <section class="fixed_home">
+            <div class="return"><a href="#header"></a></div>
+            <div class="whatsapp"><a target="_blank" rel="noreferrer" href="https://wa.me/message/7K4Z3ITHTIT2J1"></a></div>
+        </section>
+        <footer>
+          <div class="contentec_footer">
+           <div class="info_contect">
+            <div class="our_services">
+                <h5>Nuestros Servicios</h5>
+                <ul class="footer_menu">
+                    <li><a href="#id_devsoft">Desarrollo de Software</a></li>
+                    <li><a href="#id_devweb">Desarrollo Páginas Web</a></li>
+                    <li><a href="#id_soport">Soporte Técnico Informático</a></li>
+                    <li><a href="#id_reddata">Cableado Estructurado</a></li>
+                </ul>
             </div>
-           <!-- <div class="header_overlay"></div>
-            <div class="header_content">
-                <h1>Servicios y Soluciones Tecnológicas</h1>
-                <p>Desarrollamos ideas, creamos realidades</p>
-                <div class="btn_action_section">
-                    <div class="btn_action_container">
-                <div class="btn_home" id="btn-services">Nuestros Servicios</div>
-            <div class="btn_home" id="btn-cotizar">Conctatanos</div>
+            <div class="us_contact">
+                <h5>Contáctenos</h5>
+                <p><a href="#quote">Cotizar Servicios</a></p>
+                <p><a href="tel:+573146014133">Celular: +57 314 601 41 33</a></p>
+                <p><a href="mailto:harfasoft@harfasoft.com">Email: harfasoft@harfasoft.com</a></p>
             </div>
-        </div>
-            </div> -->
-    
-            <div class="logo_about">        
-                 <div class="image"> 
-                    <figure class="figure_logo"><img src="../img/Logo.svg"/></figure>                
-                 </div>             
-                <div class="info_header_1">
-                    <p><a href="tel:+573146014133">¡Llámanos!: +57 (314) 601 41 33</a></p>
-                </div>
-                <div id="show_menu" onclick="showMenu()"></div>
-                <div id="close_menu" onclick="showMenu()"></div>
-                <div class="red_social">
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61565442406411"></a>
-                <a href="#"></a>            
-                <a target="_blank" rel="noreferrer" href=" https://wa.me/message/7K4Z3ITHTIT2J1"></a>            
-                <a href="#"></a>
+            <div class="opening_hours">
+                <p>Lunes a Sabado: 8:00 am a 5:30pm</p>            
             </div>
             </div>
-            <div class="header_hr">
+           <div class="footer_hr">
            <hr/>
             </div>
-            <nav class="menu" id="card_menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#our_projects">Proyectos</a></li>
-                    <li><a href="about.html">Quienes Somos</a></li>
-                    <li><a href="#services_id">Servicios</a></li>
-                    <li><a href="#quote">Cotizar</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="general_container">
-            <article>
-                
-                <div class="about_us" id="id_about">
-                    <h2>Quienes Somos</h2>
-                    <p>Somos una empresa de tecnología, dedicada al <strong>desarrollo de software, páginas web, soporte técnico en informática y cableado estructurado</strong>. Nuestro objetivo es brindar soluciones tecnológicas a la medida de nuestros clientes, con calidad y eficiencia.
-                    Contamos con un equipo de profesionales altamente capacitados, con amplia experiencia en el sector tecnológico, comprometidos con la satisfacción de nuestros clientes.
-                    En Harfasoft, trabajamos con tecnología de punta, para ofrecer soluciones innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes.
-                    Si buscas una empresa de tecnología confiable, eficiente y comprometida con la satisfacción de sus clientes, Harfasoft es tu mejor opción.</p>
-                </div>
-                <div class="item_container">
-                <div class="our_mission">
-                    <h2>Nuestra Misión</h2>
-                    <p>Brindar soluciones tecnológicas innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes, con calidad y compromiso.</p>
-                </div>                
-                <div class="our_vision">
-                    <h2>Nuestra Visión</h2>
-                    <p>Ser una empresa líder en el sector tecnológico, reconocida por la calidad y eficiencia de sus soluciones, y por la satisfacción de sus clientes.</p>
-                </div>
-                </div>
-                <div class="our_values">
-                    <h2>Nuestros Valores</h2>
-                    <div>
-                    <p>En Harfasoft, trabajamos con los siguientes valores:</p>
-                    <ul>
-                        <li><strong>Calidad:</strong> Nos esforzamos por ofrecer soluciones tecnológicas de calidad, que cumplan con las expectativas de nuestros clientes.</li>
-                        <li><strong>Compromiso:</strong> Estamos comprometidos con la satisfacción de nuestros clientes, brindando soluciones eficientes y a la medida de sus necesidades.</li>
-                        <li><strong>Innovación:</strong> Trabajamos con tecnología de punta, para ofrecer soluciones innovadoras y eficientes, que se adapten a las necesidades de nuestros clientes.</li>
-                        <li><strong>Ética:</strong> Nos regimos por principios éticos y morales, en todas nuestras acciones y decisiones.</li>
-                        <li><strong>Trabajo en equipo:</strong> Fomentamos el trabajo en equipo, la colaboración y el respeto mutuo, para lograr los objetivos de la empresa.</li>
-                    </ul>
-                    </div>
-                </div>
-                
-            </article>
-        </section>    
-        
-    <section class="fixed_home">
-        <div class="return"><a href="#header"></a></div>
-        <div class="whatsapp"><a target="_blank" rel="noreferrer" href="https://wa.me/message/7K4Z3ITHTIT2J1"></a></div>
-    </section>
-    <footer>
-      <div class="contentec_footer">
-       <div class="info_contect">
-        <div class="our_services">
-            <h5>Nuestros Servicios</h5>
-            <ul class="footer_menu">
-                <li><a href="#id_devsoft">Desarrollo de Software</a></li>
-                <li><a href="#id_devweb">Desarrollo Páginas Web</a></li>
-                <li><a href="#id_soport">Soporte Técnico Informático</a></li>
-                <li><a href="#id_reddata">Cableado Estructurado</a></li>
-            </ul>
-        </div>
-        <div class="us_contact">
-            <h5>Contáctenos</h5>
-            <p><a href="#quote">Cotizar Servicios</a></p>
-            <p><a href="tel:+573146014133">Celular: +57 314 601 41 33</a></p>
-            <p><a href="mailto:harfasoft@harfasoft.com">Email: harfasoft@harfasoft.com</a></p>
-        </div>
-        <div class="opening_hours">
-            <p>Lunes a Sabado: 8:00 am a 5:30pm</p>            
-        </div>
-        </div>
-       <div class="footer_hr">
-       <hr/>
-        </div>
-        <div class="contenct_social_copy">           
-         <div class="red_social">
-            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61565442406411"></a>
-            <a href="#"></a>            
-            <a target="_blank" rel="noreferrer" href=" https://wa.me/message/7K4Z3ITHTIT2J1"></a>
-            <a href="#"></a>
-        </div>
-        <div class="footer_copy">
-            <p>&copy; 2025 All rights reserved Privacity Policy Harfasoft</p>
+            <div class="contenct_social_copy">           
+             <div class="red_social">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=61565442406411"></a>
+                <a href="#"></a>            
+                <a target="_blank" rel="noreferrer" href=" https://wa.me/message/7K4Z3ITHTIT2J1"></a>
+                <a href="#"></a>
             </div>
-        </div>
-        </div>
-    </footer>
+            <div class="footer_copy">
+                <p>&copy; 2024 - <span id="year"></span> All rights reserved Privacity Policy Harfasoft</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+    <script>
+        const currentYear = new Date().getFullYear(); 
+        document.getElementById('year').textContent = currentYear;    
+    </script>
+    <script async src="../js/prueba-screen.js" defer></script>
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <!-- <script src="js/slider.js"></script> -->
+        <script async src="../js/menu.js"></script>
+       <!-- <script async src="js/home.js"></script> -->
+        <script async src="../js/form-contact.js"></script>
+        <script async src="../js/policy_cookies.js"></script>
+        <script async src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script async src="../js/validator.js"></script>
     
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y966CQSQ2Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y966CQSQ2Z');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y966CQSQ2Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y966CQSQ2Z');
+    </script>
     </body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSC82X8J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </html>
