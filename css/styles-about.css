@@ -90,7 +90,16 @@ body footer .contentec_footer .contenct_social_copy .red_social a{ box-sizing: c
 body header{ min-height: 60vh; }
     body header .header_video{ position: absolute; top: 100px; left: 0; height: 645px; width: 100%; /*overflow: hidden;*/ }
 body header .logo_banner_header{ /*background-color: *#090024* #FFFFFF;*/ width: 57%; height: 190px; position: absolute; top: 23%; left: 21%; z-index: 1; }
-
+body header .header_content h1{ /*background-color: yellow;*/ font-size: 2.1rem; margin-bottom: 0;/* padding-left: 9%; width: 90%;*/ }
+body section article{ position: relative; top: 0; left: 0; z-index: 1; }
+body section article .about_us p{ font-size: 1.1rem; }
+body section article .our_mission h2{ font-size: 1.5rem; }
+body section article .our_mission p{ font-size: 1.1rem; }
+body section article .our_vision h2{ font-size: 1.5rem; }
+body section article .our_vision p{ font-size: 1.1rem; }
+body section article .our_values h2{ font-size: 1.5rem; }
+body section article .our_values p{ font-size: 1.1rem; }
+body section article .our_values ul li{ font-size: 1.1rem; }    
 }
 
 @media only screen and (min-width: 600px) {}
