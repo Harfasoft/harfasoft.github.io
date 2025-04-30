@@ -118,7 +118,22 @@ body section article{ position: relative; top: 0; left: 0; z-index: 1; }
   body header .header_content h1{ font-size: 2.2rem; margin-bottom: 0; }
 }
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+	body header{ min-height: 90vh; margin-bottom: 40px; }
+  body header .header_video{ position: absolute; top: 27%; left: 0; height: 645px; width: 100%; /*overflow: hidden;*/ }
+  body header .header_hr{ display: block; height: 2px; position: absolute; top: 100px; left: 0; width: 100vw; }
+  body header .logo_banner_header{ width: 57%; height: auto; position: absolute; top: 17%; }
+  body header .header_content { width: 90%; height: 50px; position: absolute; top: 83%; transform: translateY(30%); left: 5%; text-align: center;}
+  body header .header_content h1{ font-size: 2.5rem; margin-bottom: 0; }
+  body section article .about_us p{ font-size: 1.3rem; }
+body section article .our_mission h2{ font-size: 1.7rem; }
+body section article .our_mission p{ font-size: 1.3rem; }
+body section article .our_vision h2{ font-size: 1.7rem; }
+body section article .our_vision p{ font-size: 1.3rem; }
+body section article .our_values h2{ font-size: 1.7rem; }
+body section article .our_values p{ font-size: 1.3rem; }
+body section article .our_values ul li{ font-size: 1.3rem; }
+}
 
 @media only screen and (min-width: 1024px){}
 
