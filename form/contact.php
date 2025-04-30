@@ -1,4 +1,5 @@
 <?php
+
 $para ='harfasoft@harfasoft.com, ingenieria@harfasoft.com, harfasoft@gmail.com';
 
 $asunto ='Mensaje desde harfasoft.com';
@@ -13,5 +14,6 @@ $MESSAGE_BODY .= "\n<br>Servicios: ".$_POST["selectServicio"]."\n";
 $MESSAGE_BODY .= "\n<br>Mensaje: ".nl2br($_POST["textaMessages"])."\n";
 
 mail($para, $asunto, $MESSAGE_BODY, $mailheader) or die("Error al enviar email");
-header('Location: https://harfasoft.com/contacto')
+header('Location: https://harfasoft.com');
+
 ?>

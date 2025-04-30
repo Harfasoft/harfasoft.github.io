@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>       
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WSC82X8J');</script>
+    <!-- End Google Tag Manager -->
     <meta http-equiv="X-UA-Compatible" content="IE=5" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta http-equiv="X-UA-Compatible" content="IE=8" />
@@ -8,8 +15,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="img/faviIcon.png" rel="shortcut icon">
-    <meta charset="UTF-8">    
-    <meta name="title" content="::HARFASOFT::" />
+    <meta charset="UTF-8">
+    <meta property="og:title" content="HARFASOFT S.A.S" />
+    <meta property="og:description" content="Desarrollo de software y paginas web, Soporte técnico en informática" />
+    <meta property="og:image" content="https://harfasoft.com/img/Logo.svg">
+    <meta name="title" content="::HARFASOFT::" />    
     <meta name="author" content="Alex-Herrera">
     <meta name="owner" content="HARFASOFT S.A.S">
     <meta name="description" content="Desarrollo de software y paginas web, Soporte técnico en informática" />
@@ -20,27 +30,16 @@
     <meta name="distribution" content="Global">
     <meta name="robots" CONTENT="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Harfasoft</title>    
-    <script src="js/modernizr-custom.js"></script>    
+    <script src="js/modernizr-custom.js" defer></script>    
     <style type="text/css" media="screen">        
         @import url("css/styles.css");
         @import url("css/icomoon.css");
-    </style> 
-    <script src="js/prueba-screen.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/form-contact.js"></script>
-    <script src="js/policy_cookies.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </style>     
 </head>
-
 <body>  
     <header>
         <div class="header_video" id="header">
@@ -50,7 +49,7 @@
         </div>
         <div class="header_overlay"></div>
         <div class="logo">           
-                <figure> <a class="image" href="index.html"><img src="img/Logo.svg" /> </a>  </figure>
+                <figure> <a class="image" href="index.html"><img src="img/Logo.svg" alt="logo-empresa" /></a>  </figure>
             <div class="info_header">
                 <p><a href="tel:+573146014133">¡Llámanos!: +57 (314) 601 41 33</a></p>
             </div>
@@ -84,9 +83,71 @@
                 <li><a href="#services_id">Servicios</a></li>
                 <li><a href="#quote">Cotizar</a></li>
             </ul>
-        </nav>
-  
+        </nav>  
     </header>
+    <section class="container_cookies" id="container_cookies">        
+        <div class="overlay_cookies" id="overlay_cookies" onclick="openCookies()"><p>X</p></div>        
+        <article class="contenido">            
+            <h2>Política de Cookies de Harfasoft Servicios y Soluciones Tecnológicas</h2>
+            <h4>Última actualización: <span id="currentDate"></span></h4>
+            <p>En <strong>HARFASOFT S.A.S</strong> nos tomamos muy en serio la privacidad de nuestros usuarios y clientes. Esta Política de Cookies describe cómo utilizamos las cookies y tecnologías</p>            <p></p>
+            <p>similares en nuestro sitio web para mejorar la experiencia del usuario, personalizar el contenido y generar la facturación por los servicios prestados.</p>
+            <h5>¿Qué son las cookies?</h5>
+            <p>Las <strong>cookies</strong> son pequeños archivos de texto que se almacenan en el dispositivo del usuario (como su computadora, teléfono móvil o tablet) cuando visitan un sitio web. Estas cookies nos permiten mejorar la funcionalidad del sitio, analizar el tráfico, personalizar contenido y proporcionar servicios más eficientes.</p>
+            <h5>¿Qué cookies utilizamos?</h5>
+            <p>En HARFASOFT, utilizamos tanto <b>cookies propias</b> como <b>cookies de terceros.</b> A continuación, te explicamos los tipos de cookies que utilizamos:</p>
+            <ul class="list_cookies">
+                <li><h6>Cookies técnicas o esenciales:</h6>
+                    <p>Estas cookies son necesarias para el funcionamiento básico del sitio web y permiten funciones esenciales, como navegar por el sitio o completar un formulario de contacto. Sin estas cookies, el sitio no podría funcionar correctamente.</p>
+                </li>
+                <li><h6>Cookies de análisis o rendimiento:</h6>
+                    <p>Utilizamos cookies para recopilar información sobre cómo los usuarios interactúan con nuestro sitio web. Estas cookies nos ayudan a analizar el tráfico del sitio, entender las páginas más visitadas y cómo los usuarios utilizan el sitio. Usamos esta información para mejorar la experiencia del usuario y el contenido del sitio.
+                        Con Google Analytics politica de privacidad https://policies.google.com/technologies/cookies?hl=es.</p>
+                </li>
+                <li><h6>Cookies de funcionalidad:</h6>
+                    <p>Estas cookies permiten recordar tus preferencias y personalizar tu experiencia en el sitio web, como el idioma o la configuración de la página.</p>
+                </li>
+                <li><h6>Cookies de publicidad o marketing:</h6>
+                    <p>Usamos cookies de terceros para mostrar anuncios relevantes basados en tus intereses. Estas cookies también se utilizan para rastrear la efectividad de nuestras campañas publicitarias y mejorar nuestra estrategia de marketing.</p>
+                </li>
+            </ul>
+            <h5>¿Cómo utilizamos los datos recopilados?</h5>
+            <p>Los datos recopilados a través de las cookies se utilizan con los siguientes fines:</p>
+            <ul class="use_cookies">
+                <li><h6>Contacto con los clientes:</h6>
+                    <p>Para poder responder a las consultas de nuestros usuarios o clientes a través del formulario de contacto.</p>
+                </li>
+                <li><h6>Generación de facturas:</h6>
+                    <p>Para generar facturas electrónicas por los servicios prestados y cumplir con nuestras obligaciones fiscales.</p>
+                </li>
+                <li><h6>Mejorar la experiencia del usuario:</h6>
+                    <p>Analizar el uso del sitio web para mejorar su funcionalidad y diseño.</p>
+                </li>
+            </ul>
+            <h5>¿Cómo gestionar las cookies?</h5>
+            <p>Puedes gestionar las cookies a través de la configuración de tu navegador. La mayoría de los navegadores permiten controlar las cookies a través de su configuración, lo que te permite:</p>
+            <ul class="manage_cookies">
+                <li><p>Aceptar o rechazar todas las cookies.</p></li>
+                <li><p>Aceptar solo cookies de ciertos sitios web.</p></li>
+                <li><p>Eliminar todas las cookies almacenadas en tu dispositivo.</p></li>
+            </ul>
+            <p>Si decides desactivar las cookies, es posible que algunas funciones del sitio no estén disponibles o que tu experiencia de navegación no sea óptima.</p>
+            <h5>Consentimiento para el uso de cookies</h5>
+            <p>Al utilizar nuestro sitio web, aceptas el uso de cookies tal como se describe en esta Política de Cookies. Si no deseas aceptar cookies, puedes desactivarlas a través de la configuración de tu navegador. Sin embargo, algunas funcionalidades del sitio pueden verse afectadas.</p>
+            <h5>Enlaces a sitios de terceros</h5>
+            <p>Nuestro sitio web puede contener enlaces a otros sitios web que no están bajo nuestro control. Esta Política de Cookies se aplica únicamente a nuestro sitio web y no nos responsabilizamos del uso de cookies en otros sitios. Te recomendamos leer las políticas de cookies de los sitios de terceros que visites.</p>
+            <h5>Cambios en la Política de Cookies</h5>
+            <p>Podemos actualizar esta Política de Cookies para reflejar cambios en nuestras prácticas o debido a cambios legislativos. Te recomendamos revisar esta página periódicamente para mantenerte informado sobre cómo utilizamos las cookies.</p>
+            <p>Si tienes alguna pregunta o inquietud acerca de nuestra Política de Cookies, no dudes en ponerte en contacto con nosotros.</p>
+            <h5>Contáctanos:</h5>
+            <ul class="contact_info">
+                <li><b>Correo electrónico:</b><p>harfasoft@harfasoft.com</p></li>
+                <li><b>Teléfono:</b><p>+57 (314) 601 41 33</p></li>               
+            </ul>
+             
+        </article>       
+    </section>
+
    <section class="services" id="services_id">
         <article class="services_content">
             <h2>Nuestros Servicios</h2>
@@ -166,17 +227,13 @@
                     </figure>
                     <h3>Soporte Técnico</h3>
                     <div class="difuminado"></div>
-
-                    <!-- <p>Ingeniero De Software</p> -->
-
                </div>
                <div class="projects_item">
                 <figure>
                     <img src="img/instalacion-de-red.webp" alt="proyecto-instalacion-de-red">
                 </figure>
                 <h3>Instalacion de Redes</h3>
-                <div class="difuminado"></div>
-                
+                <div class="difuminado"></div>                
             </div>
                 <div class="projects_item">
                     
@@ -206,17 +263,17 @@
             <div class="card_testimonial">
                 <div class="card_container">
                 <figure>
-                    <img src="img/">
+                    <img src="img/avatar-man.webp" alt="image of customer">
                 </figure>
                 <h4 class="title-customer">Outsourcing Contable</h4>
                 <h3>Libardo Ortiz</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <p>Me ayudaron a recuperar la información contable de mis clientes buen servicio</p>
                 </div>
             </div>
             <div class="card_testimonial">
                 <div class="card_container">
                 <figure>
-                    <img src="img/">
+                    <img src="img/avatar-woman.webp" alt="image of customer">
                 </figure>
                 <h4></h4>
                 <h3></h3>
@@ -228,17 +285,17 @@
             <div class="card_testimonial">
                 <div class="card_container">
                 <figure>
-                    <img src="img/">
+                    <img src="img/avatar-woman.webp" alt="image of customer">
                 </figure>
-                <h4 class="title-customer">Outsourcing Contable</h4>
-                <h3>Libardo Ortiz</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <h4 class="title-customer">Comercial</h4>
+                <h3>Janeth Torres</h3>
+                <p>Excelente servicio en la actualización de mi laptop</p>
                 </div>
             </div>
             <div class="card_testimonial">
                 <div class="card_container">
                 <figure>
-                    <img src="img/">
+                    <img src="img/avatar-man.webp" alt="image of customer">
                 </figure>
                 <h4></h4>
                 <h3></h3>
@@ -258,14 +315,14 @@
         <div class="quote_form">
            <form action="form/contact.php" method="post" id="form_contact" name="form_contact">
             <div class="form_input_text">
-                <input type="text" name="txtFullName" placeholder="Tu Nombre" required>
+                <input type="text" id="txtFullName" name="txtFullName" placeholder="Tu Nombre" required >
             </div>
             <div class="form_input_email">
-                <input type="email" name="txtEmail" placeholder="Correo Electronico" required>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Correo Electronico" required>
             </div>
             <div class="form_select">
                 <label for="selectServicio">Servicios</label>
-                <select name="selectServicio" required>
+                <select id="selectServicio" name="selectServicio" required>
                 <option value="Seleccion">Seleccione</option>
                 <option value="SoporteTecnico">Servicio Tecnico</option>
                 <option value="CableadoEstructurado">Cableado Estructurado</option>
@@ -274,10 +331,10 @@
                 </select>
             </div>
             <div class="form_textarea">
-                <textarea name=textaMessages rows="5" cols="30" minlength="10" maxlength="200" placeholder="Mensaje..."></textarea>
+                <textarea id="textaMessages" name=textaMessages rows="5" cols="30" minlength="10" maxlength="200" placeholder="Mensaje..."></textarea>
             </div>
                <div class="form_button">
-                   <button>Enviar Mensaje</button>
+                   <button onclick="validate()">Enviar Mensaje</button>
                </div>
             </form>        
         </div>        
@@ -288,8 +345,9 @@
         <div class="return"><a href="#header"></a></div>
         <div class="whatsapp"><a target="_blank" rel="noreferrer" href="https://wa.me/message/7K4Z3ITHTIT2J1"></a></div>
     </section>
+
     <section class="galletas" id="id_galletas">
-        Este sitio web utiliza cookies, puedes consultar nuestra <a href="#">política de cookies</a>. Si continuas navegando estás aceptando la <button id="aceptar_cookies">Aceptar</button>
+        Este sitio web utiliza cookies, puedes consultar nuestra <a id="open_card_cookie" onclick="openCookies()" href="#">política de cookies</a>. Si continuas navegando estás aceptando la <button id="aceptar_cookies">Aceptar</button>
         <div id="galleta1" onmouseover="document.getElementById('id_galletas').style.bottom= '0px';">Política de cookies</div>
     </section>
     <footer>
@@ -325,27 +383,36 @@
             <a href="#"></a>
         </div>
         <div class="footer_copy">
-            <p>&copy; <span id="year"></span> All rights reserved Privacity Policy Harfasoft</p>
+            <p>&copy; 2024 - <span id="year"></span> All rights reserved Privacity Policy Harfasoft</p>
             </div>
         </div>
         </div>
     </footer>
-    
-    <!-- Google tag (gtag.js) -->
+<script>
+    const currentYear = new Date().getFullYear(); 
+    document.getElementById('year').textContent = currentYear;    
+</script>
+<script async src="js/prueba-screen.js" defer></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/slider.js"></script> -->
+    <script async src="js/menu.js"></script>
+   <!-- <script async src="js/home.js"></script> -->
+    <script async src="js/form-contact.js"></script>
+    <script async src="js/policy_cookies.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script async src="js/validator.js"></script>
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y966CQSQ2Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-Y966CQSQ2Z');
 </script>
-<script>
-    // Obtén el año actual
-    const currentYear = new Date().getFullYear();
-
-    // Asigna el año al elemento con id="year"
-    document.getElementById('year').textContent = currentYear;
-</script>
 </body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSC82X8J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </html>
