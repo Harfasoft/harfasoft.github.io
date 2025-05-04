@@ -26,7 +26,7 @@ body header .logo #close_menu::before{ font-size: 20px; }
 body header .logo #close_menu:hover{ border: 1px dotted #fff; }
 body header .header_hr{ display: none; background-color: #4d5566;  height: 5px; position: absolute; top: 119px; left: 0; width: 100vw; }
 body header .header_content { /*background-color: aqua;*/ width: 90%; height: 50px; position: absolute; top: 80%; transform: translateY(30%); left: 5%; text-align: center;}
-body header .header_content h1{ /*background-color: yellow;*/ color: #eb7305; font-family: 'Ubuntu'; font-size: 1.7rem;  margin-bottom: 0;/* padding-left: 9%; width: 90%;*/ }
+body header .header_content h1{ /*background-color: yellow;*/ color: #eb7305; font-family: 'Ubuntu'; font-size: 1.5rem;  margin-bottom: 0;/* padding-left: 9%; width: 90%;*/ }
 
 body .fixed_home .return a::before{ color: #FFFFFF; }
 
@@ -45,7 +45,7 @@ body section article .our_mission h2{/*background-color: yellow;*/ color: #eb730
 body section article .our_mission p{ /*background-color: white;*/ color: #090024; font-family: 'myriad', sans-serif; font-size: 1rem; line-height: 1.5; text-align: left; padding: 1.2rem; }
 body section article .our_vision h2{ /*background-color: yellow;*/ color: #090024; font-family: 'Ubuntu'; font-size: 1.5rem; line-height: 1; padding-left: 20px;  margin-bottom: 0; }
 body section article .our_vision p{ /*background-color:blanchedalmond;*/ color: #eb7305; font-family: 'myriad', sans-serif; font-size: 1rem; line-height: 1.5; text-align: left; padding: 1.2rem; }
-body section article .our_values{ /*background-color: hotpink;*/ border-radius: 8px; background-color: #FFFFFF; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: block; margin-left: 5%; margin-bottom: 150px; padding-left: 10px; padding-top: 20px; width: 90%; transition: transform 0.3s ease; }
+body section article .our_values{ /*background-color: hotpink;*/ border-radius: 8px; background-color: #FFFFFF; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: block; margin-left: 5%; margin-bottom: 150px; padding: 20px 0 30px 10px; width: 90%; transition: transform 0.3s ease; }
 body section article .our_values h2{ /*background-color: yellow;*/ font-family: 'Ubuntu'; font-size: 1.5rem; width: 90%; line-height: 2; margin-left: 5%; }
 body section article .our_values p{ /*background-color: wheat;*/ font-family: 'Ubuntu', sans-serif; font-size: 1rem; line-height: 1.5; text-align: left; padding: 2rem; }
 body section article .our_values ul li{ /*background-color: wheat;*/ font-family: 'myriad', sans-serif; font-size: 1rem; line-height: 1.5; list-style: none; text-align: left; padding: 1rem 2rem; }
@@ -85,32 +85,20 @@ body section article{ position: relative; top: 0; left: 0; z-index: 1; }
 }
 
 @media screen and (min-width: 900px) {
-  body header{ min-height: 90vh; margin-bottom: 40px; }
-  body header .header_video{ position: absolute; top: 27%; left: 0; height: 645px; width: 100%; /*overflow: hidden;*/ }
-  body header .logo{ /*background-color: red;*/ display: flex; width: 100vw; height: 100px; z-index: 2; position: absolute; top: 0; left: 0;}
-/*body header .logo figure{ width: 100px;height: 100%; margin-left: 20px;}
-body header .logo figure img{ width: 100%; height: 100%;}
-body header .logo figure:hover{cursor: pointer;} */
-body header .logo .info_header{ /*background-color: #fff;*/ /*display: block;*/ margin: 0 30% 0 12%; /*text-align: center;*/ }
-body header .logo .info_header a{ /*font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold;*/ font-size: 1rem; }
-body header .logo .red_social{ /*display: block;*/ width: 23%; height: 40px; position: absolute; top: 35px; right: 15%; text-align: right;}
-body header .logo .red_social a{ width: 15%; margin: 2px 2px 0 5px; padding: 3px; }
-/*body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.2em; }
-body header .logo .red_social a:nth-child(1)::before{content: "\ea90";}
-body header .logo .red_social a:nth-child(2)::before{content: "\ea92";}
-body header .logo .red_social a:nth-child(3)::before{content: "\ea93";}
-body header .logo .red_social a:nth-child(4)::before{content: "\eaca";}
-body header .logo .red_social a:hover::before{color: #ffffff;}
-*/
-
-  
+  body header{ min-height: 70vh; margin-bottom: 40px; }
+  body header .header_video{ position: absolute; top: 27%; left: 0; height: 645px; width: 100%; }
+  body header .logo{ display: flex; width: 100vw; height: 100px; z-index: 2; position: absolute; top: 0; left: 0;}
+body header .logo .info_header{ margin: 0 30% 0 12%; }
+body header .logo .info_header a{ font-size: 1rem; }
+body header .logo .red_social{ width: 23%; height: 40px; position: absolute; top: 35px; right: 15%; text-align: right;}
+body header .logo .red_social a{ width: 15%; margin: 2px 2px 0 5px; padding: 3px; }  
   body header .header_hr{ display: block; height: 2px; position: absolute; top: 100px; left: 0; width: 100vw; }
   body header .logo_banner_header{ width: 57%; height: auto; position: absolute; top: 17%; }  
   body header .header_content { width: 90%; height: 50px; position: absolute; top: 83%; transform: translateY(30%); left: 5%; text-align: center;}
   body header .header_content h1{ font-size: 2.5rem; margin-bottom: 0; }
   body section article .about_us{ display: flex;}
   body section article .about_us p{ font-size: 1.3rem; }
-  body section article .item_container{ display: flex;  width: 95%;}
+  body section article .item_container{ display: flex; margin-bottom: 10px; width: 95%;}
   body section article .item_container div{ width: 100%;}  
 body section article .our_mission h2{ font-size: 1.7rem; }
 body section article .our_mission p{ font-size: 1.3rem; }
@@ -118,13 +106,42 @@ body section article .our_vision h2{ font-size: 1.7rem; }
 body section article .our_vision p{ font-size: 1.3rem; }
 body section article .our_values h2{ font-size: 1.7rem; }
 body section article .our_values p{ font-size: 1.3rem; }
-body section article .our_values ul li{ font-size: 1.3rem; }
+body section article .our_values ul li{ font-size: 1rem; }
 }
 
-@media only screen and (min-width: 1024px){}
+@media only screen and (min-width: 1024px){
 
-@media only screen and (min-width: 1400px) {}
+  body header{ margin-bottom: 150px; }
+  body header .header_video{ position: absolute; top: 25%; left: 0; height: 645px; width: 100%; /*overflow: hidden;*/ }
+  body header .logo_banner_header{ width: 57%; height: auto; position: absolute; top: 17%; left: 21%; }
+  body header .header_content { width: 90%; height: 50px; position: absolute; bottom: -100%; transform: translateY(80%); left: 5%; text-align: center; z-index: 3;}
+  body header .header_content h1{ font-size: 2.8rem; margin-bottom: 0; }
+  body section article .our_values{ display: flex; }
+  body section article .our_values h2{ width: 60%; line-height: 5; padding-top: 15%; font-size: 2rem; padding-left: 17px; }
+  body section article .our_values p{ line-height: 1.5; text-align: left; padding: 2rem; }
+  body section article .our_values ul li{ line-height: 1.5; list-style: none; text-align: left; padding: 1rem 2.2rem; }
+  
+}
 
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1400px) {  
+  body header{ margin-bottom: 220px; }
+  body header .logo_banner_header{ height: 480px; position: absolute; top: 23%; left: 21%; }
+  body header .logo .info_header{ margin: 0 30% 0 12%; }
+  body header .logo .info_header a{ font-size: 1rem; }
+  body header .logo .red_social{ width: 23%; height: 40px; position: absolute; top: 35px; right: 5%; text-align: right; }
+  body header .logo .red_social a{ width: 15%; margin: 2px 2px 0 5px; padding: 3px; }
+  body header .header_content { width: 50%; height: 60px; margin-left: 19%; }
+  body header .header_content h1{ font-size: 3rem; } 
+  body .general_container{ width: 80%; margin-left: 10%; }
+}
 
-@media only screen and (min-width: 1800px) { }
+@media only screen and (min-width: 1600px) {
+  body header .logo_banner_header{ height: 580px; position: absolute; top: 23%; left: 21%; }
+  body section article .our_values h2{ padding-top: 10%; font-size: 2rem; }
+}
+
+@media only screen and (min-width: 1800px) {
+  body header .logo_banner_header{ height: 680px; position: absolute; top: 10%; left: 21%;}
+  body header .header_content { width: 50%; height: 60px; position: absolute; top: 90%; transform: translateY(100%); margin-left: 19%; }  
+  
+}
