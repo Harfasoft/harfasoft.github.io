@@ -9,8 +9,8 @@
 body{background-color: #f9f8f8;}
 body,a{ text-decoration: none; overflow-x: hidden;}
 
-body header{ background-color: #090024;min-height: 35vh; margin-bottom: 40px; position: relative; top: 0; left: 0; }
-body header .header_video{ position: absolute; top: 27%; left: 0; height: auto; width: 100%; }
+body header{ background-color: #090024;min-height: 40vh; margin-bottom: 40px; position: relative; top: 0; left: 0; }
+body header .header_video{ position: absolute; top: 30%; left: 0; height: auto; width: 100%; }
 body header .header_video figure{ background-color: #090024; width: 100%; height: auto; object-fit: cover;}
 body header .header_video figure img{ width: 100%; height: 100%; }
 
@@ -32,7 +32,7 @@ body header .logo #close_menu:hover{ border: 1px dotted #fff; }
 body header .header_hr{ display: none; background-color: #4d5566;  height: 5px; position: absolute; top: 119px; left: 0; width: 100vw; }
 body .fixed_home .return a::before{ color: #FFFFFF; }
 
-body .general_container{ color: #4d5566; position: relative; top: 80px; left: 0;}
+body .general_container{ color: #4d5566; position: relative; top: 50px; left: 0;}
 body section article{ position: relative; top: 0; left: 0; z-index: 99; }
 body section article .about_us{ background-color: #FFFFFF; display: block; margin-left: 5%; margin-bottom: 0; width: 90%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; }
 body section article .about_us p{ font-family: 'Ubuntu', sans-serif; font-size: 1rem; line-height: 1.5; text-align: left; padding: 1.2rem; }
@@ -103,7 +103,7 @@ body header .logo .red_social a{ width: 15%; margin: 2px 2px 0 5px; padding: 3px
   
   body header nav { position: absolute; top: 108px; left: 0; }
 
-  body section article .about_us{ display: flex; }
+  /*body section article .about_us{ display: flex; }*/
   body section article .about_us p{ font-size: 1.3rem; }
   body section article .item_container{ display: flex; margin-bottom: 10px; width: 95%; }
   body section article .item_container div{ width: 100%; }  
