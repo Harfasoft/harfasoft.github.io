@@ -6,7 +6,7 @@
     font-display: block;
   }
 *{margin: 0; padding: 0; box-sizing: content-box;}
-body,a{color: #fff; text-decoration: none; overflow-x: hidden;}
+body,a { color: #e0e0e0; } /* Cambiado de #fff para mejor contraste */
 
 body header{ align-items: center; display: flex; min-width: 100%; min-height: 100vh; margin-bottom: 30px;}
 body header .header_video{ position: absolute; top: 0; left: 0; height: 100vh; width: 100%; overflow: hidden; }
@@ -18,7 +18,7 @@ body header .logo figure{ width: 100px;height: 100%; margin-left: 20px;}
 body header .logo figure img{ width: 100%; height: 100%;}
 body header .logo figure:hover{cursor: pointer;}
 body header .logo .info_header{ display: none; margin: 0 30% 0 8%; text-align: center; }
-body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold; font-size: 15px; }
+body header .logo .info_header a { font-family: 'myriad', sans-serif; color: #d87a1d; font-weight: bold; font-size: 15px; } /* Cambiado de #eb7305 */
 body header .logo .red_social{ display: none; width: 30%; position: absolute; top: 35px; right: 20px; height: 40px; }
 body header .logo .red_social a{ width: 10%; height: 30px;display: inline-block; margin: 2px 2px 0 20px; padding: 3px; }
 body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.2em; }
@@ -32,7 +32,7 @@ body header .logo .header_content { width: 100%; position: absolute; top: 70%; t
 body header .logo .header_content h1{ font-family: 'Ubuntu'; font-size: 35px; margin-bottom: 0; margin-left: 7%; }
 body header .logo .header_content p{ font-family: 'myriad', sans-serif; font-size: 1rem; display: block; padding: 0 5% 2rem 7%; }
 body header .logo #show_menu{ display: block; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px; }
-body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 27px;font-weight: bolder; position: absolute; top: 10px; right: 14px;  }
+body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 27px;font-weight: bolder; position: relative; top: 10px; right: 14px; padding: 5px 15px 5px 8px;}
 body header .logo #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305; }
 body header .logo #close_menu{ display: none; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px;}
 body header .logo #close_menu::before{content: 'X'; font-size: 27px; font-weight: bolder; position: relative; top: 10px; right: -16px;}
@@ -40,8 +40,8 @@ body header .logo #close_menu:hover{cursor: pointer; border-radius: 3px; border:
 body header nav {display: none; background-color: #ffffff; width: 100vw;  height: 220px; position: absolute; top: 90px; left: 0; z-index: 2;}
 body header nav ul{ display: block; list-style: none; margin-bottom: 60px;}
 body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 0;}
-body header nav ul li a{ font-family: 'Ubuntu'; font-size: 16px; color: #090024;}
-body header nav ul li a:hover{color: #eb7305;}
+body header nav ul li a { font-family: 'Ubuntu'; font-size: 16px; color: #0a0a3c; } /* Cambiado de #090024 */
+body header nav ul li a:hover { color: #d87a1d; } /* Cambiado de #eb7305 */
 
 body .general_container{ width: 100%; position: relative; top: 0; left: 0;}
 body .btn_action_section{width: 100%; align-items: center; margin-top: 15px; padding-bottom: 30px;}
@@ -53,6 +53,20 @@ body .btn_action_section .btn_action_container #btn-cotizar{border: 1px solid #e
 body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
 body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #090024; color: white; font-weight: bold; height: 30px;}
 
+body .container_cookies{ display: none; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100vh; margin: 0 auto; padding: 0;  position: fixed; top: 0; left: 0; z-index: 99999; }
+    body .container_cookies .overlay_cookies{ cursor: pointer; background-color: #333; opacity: .70; width: 100%; height: 100vh; margin: 0 auto; padding: 0; }
+    body .container_cookies .overlay_cookies p{ cursor: pointer; color: #ffffff; font-weight: bold; text-align: right; padding: 10% 20% 0 0; }
+    body .container_cookies .contenido{ background-color: #f4f4f4; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  color: #333; font-family: Arial, Helvetica, sans-serif; width: 70%; max-width: 70%; height: 700px; position: absolute; top: 10%; left: 10%; padding: 10px; overflow-y: auto; z-index: 6; }   
+    body .container_cookies .contenido h2 { font-size: 1.5rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 20px; }    
+    body .container_cookies .contenido h4 { font-size: 1.1rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 15px; }
+    body .container_cookies .contenido h5 { font-size: 1.2rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 15px; }
+    body .container_cookies .contenido h6 { font-size: 1.1rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 15px; }
+    body .container_cookies .contenido ul { padding-left: 20px; margin-bottom: 20px; }
+    body .container_cookies .contenido .list_cookies { list-style: decimal; }
+    body .container_cookies .contenido .list_cookies li { font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+    body .container_cookies .contenido .use_cookies { list-style: disc; }    
+    body .container_cookies .contenido p { font-size: 1rem; line-height: 1.5; margin-bottom: 10px; }
+  
 body .services{ transition-duration: 0.3s; color: #333; padding-bottom: 30px; width: 100%; margin-top: 100px;}
 body .services:hover{box-shadow: 0 0 8px rgba(0,0,0,0.6);}
 body .services .services_content{ width: 100%; height: auto; }
@@ -142,7 +156,7 @@ body footer{ background-color: #090024; width: 100vw; height: auto; float: botto
 body footer .contentec_footer{  width: 100%; height: auto; } 
 body footer .contentec_footer .info_contect{ color: #fff; display: block; margin-left: 0;  padding-top: 50px; width: 100%; }
 body footer .contentec_footer .info_contect div{ width: 100%; height: auto; margin-bottom: 10px; }
-body footer .contentec_footer .info_contect h5{ font-family: 'Ubuntu'; font-size: 20px; font-weight: bold; margin: 0 10% 20px 20%; }
+body footer .contentec_footer .info_contect .title_footer{ font-family: 'Ubuntu'; font-size: 20px; font-weight: bold;  margin: 0 10% 20px 23%; }
 body footer .contentec_footer .info_contect p{ font-family: 'myriad', sans-serif; font-size: 14px; }    
 body footer .contentec_footer .info_contect .our_services{ padding-bottom: 20px; }
 body footer .contentec_footer .info_contect .our_services ul li{ list-style: none; padding-bottom: 10px; margin: 0 10% 0 20%;}
@@ -178,7 +192,7 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body .testimonial .container{ position: relative; top: 0; left: 20%; width: 60vw; }    
     .galletas{font-size: .7em;  }
     body .section_quote .content_background .content_quote{ position: relative; top: 55px; left: 15%; width: 70vw; }
-    body footer .contentec_footer .info_contect h5{ margin: 0 10% 20px 30%; }
+    body footer .contentec_footer .info_contect .title_footer{ margin: 0 10% 20px 30%; }
     body footer .contentec_footer .info_contect .our_services ul li{ margin: 0 10% 0 30%; }
     body footer .contentec_footer .info_contect .us_contact p{ margin: 0 10% 0 30%; }
     body footer .contentec_footer .info_contect .opening_hours p{ margin: 0 10% 0 20%; }
@@ -189,7 +203,8 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
 @media only screen and (min-width: 600px) {
     
     body header{ margin-bottom: 90px;}
-    body .btn_action_section .btn_action_container{ position: relative; top: 0; left: 7%; }    
+    body .btn_action_section .btn_action_container{ position: relative; top: 0; left: 7%; }
+    body .container_cookies .contenido{ width: 70%; max-width: 70%; position: absolute; top: 10%; left: 15%;} 
     body .services .services_content h2{ font-size: 2.5em; padding-top: 60px; }
     body .about{ display: flex; height: 100%; max-height: 100%; }
     body .about .about_content .about_colum{ height: 1000px; padding-bottom: 200px; }
@@ -199,7 +214,7 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body .section_quote .content_background .content_quote{ position: relative; top: 55px; left: 15%; width: 70vw; }
     body footer .contentec_footer .info_contect{ color: #fff; display: flex; margin-left: 0;  padding-top: 50px; width: 100%; }
     body footer .contentec_footer .info_contect div{ margin-right: 5px; width: 100%; height: auto; margin-bottom: 10px; }
-    body footer .contentec_footer .info_contect h5{ margin: 0 10% 20px 10%; }
+    body footer .contentec_footer .info_contect .title_footer{ margin: 0 10% 20px 10%; }
     body footer .contentec_footer .info_contect .our_services ul li{ margin: 0 10% 0 10%; }
     body footer .contentec_footer .info_contect .us_contact p{ margin: 0 10% 0 10%;}
     body footer .contentec_footer .info_contect .opening_hours p{ margin: 0 10% 0 10%; }
@@ -216,6 +231,9 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body .btn_action_section .btn_action_container #btn-cotizar a{ color: #ffffff; }
     body .btn_action_section .btn_action_container #btn-cotizar:hover{ border: none; background-color: #eb7305; }
     
+    body .container_cookies .contenido{ width: 70%; max-width: 70%; position: absolute; top: 10%; left: 15%; }
+    body .container_cookies .overlay_cookies p{ padding: 5% 10% 0 0; }
+
     body .services{ padding-bottom: 30px; margin-top: 0;}    
     body .services .services_content{ width: 100%; height: auto; }
     body .services .services_content .general_container{ width: 80%; height: auto; margin-left: 10%;}
@@ -252,7 +270,7 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
 
     body header{ margin-bottom: 100px;}
     body header .logo .info_header{ display: block; margin: 0 30% 0 18%; padding: 40px 25px; text-align: center; }
-    body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#eb7305; font-weight: bold; font-size: 15px; }
+    body header .logo .info_header a{ font-family: 'myriad', sans-serif; color:#d87a1d; font-weight: bold; font-size: 15px; } /* Cambiado de #eb7305 */
     body header .logo .red_social{ display: block; width: 20%; position: absolute; top: 35px; right: 20px; height: 40px; padding-left: 20px;}
     body header .logo .red_social a{ width: 11%; height: 30px;display: inline-block; margin: 2px 2px 0 10px; padding: 3px; }
     body header .logo .red_social a::before{ color: #eb7305; font-family: "icomoon"; text-decoration: none; font-size: 1.2em; }
@@ -266,11 +284,11 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body header .logo .header_content h1{ font-size: 60px; }
     body header .logo .header_content p{ font-size: 1.5rem; padding-bottom: 2rem; }
     body header .logo #show_menu{ display: none; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px; }
-    body header nav {display: block; width: 100vw; background-color: transparent;  height: 40px; position: absolute; top: 120px; left: 0; z-index: 2; }
+    body header nav { /*color: #ffffff;*/ display: block; width: 100vw; background-color: transparent;  height: 40px; position: absolute; top: 120px; left: 0; z-index: 2; }
     body header nav ul{ display: flex; list-style: none; margin-bottom: 60px; }
     body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 15%; }
-    body header nav ul li a{ font-family: 'Ubuntu'; font-size: 16px; color: #ffffff;}
-    body header nav ul li a:hover{color: #eb7305;}
+    body header nav ul li a { font-family: 'Ubuntu'; font-size: 16px; color: #ffffff; /*#0a0a3c;*/ } /* Cambiado de #090024 */
+    body header nav ul li a:hover { color: #d87a1d; } /* Cambiado de #eb7305 */
        
     body .btn_action_section .btn_action_container{ display: flex; width: 85%; position: relative; top: 0; left: 7%;}
     body .btn_action_section .btn_action_container div{ width: 25%; margin-right: 80px; text-align: center;  margin-top: 30px; }
@@ -311,6 +329,9 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body .btn_action_section .btn_action_container #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold; }
     body .btn_action_section .btn_action_container #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px; }
     
+    body .container_cookies .contenido{ width: 70%; max-width: 70%; position: absolute; top: 10%; left: 15%; }
+    body .container_cookies .overlay_cookies p{ padding: 20px 12% 0 0; }
+
     body .services .services_content { width: 100%; height: auto; }
     body .services .services_content .general_container{ width: 67%; height: auto; margin-left: 17%;}
     body .services .services_content .services_item div h3{ font-size: 1.3rem; }
@@ -347,7 +368,7 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
 
     body footer .contentec_footer .info_contect{ color: #fff; display: flex; margin-left: 7%;  padding-top: 50px; width: 85%; }
     body footer .contentec_footer .info_contect div{ width: 100%; height: auto; margin-bottom: 10px; }
-    body footer .contentec_footer .info_contect h5{ font-size: 22px; }
+    body footer .contentec_footer .info_contect .title_footer{ font-size: 22px; }
     body footer .contentec_footer .info_contect p{ font-size: 18px; }
     body footer .contentec_footer .info_contect .opening_hours p{ font-size: 15px; }
     body footer .contentec_footer .info_contect .our_services ul li a{ font-size: 15px; }
@@ -394,6 +415,9 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body header .logo .header_content p{ font-size: 1.5rem; display: block; padding-bottom: 2rem; }
     body header nav ul li{ cursor: pointer; padding: 10px 20px; position: relative; top: 0; left: 30%; }
     
+    body .container_cookies .contenido{ width: 50%; max-width: 50%; position: absolute; top: 10%; left: 15%; }
+    body .container_cookies .overlay_cookies p{ padding: 40px 12% 0 0; }
+
     body .about .about_content .about_colum{ height: 80vh; position: static; top: 0; left: 0;}
     body .about .about_content .general_container .content_item{ transform: translateY(20%); margin-bottom: 200px;}
     body .about .about_content .general_container .content_item .devsoft{ width: 25%; height: 100%; }
@@ -405,16 +429,19 @@ body footer .contentec_footer .contenct_social_copy .footer_copy p{ text-align: 
     body .section_quote .content_background .content_quote{ display: flex; position: relative; top: -55px; left: 17%; margin-right: 20%; width: 65vw; height: auto; }
 }
 
-@media only screen and (min-width: 1800px) {    
+@media only screen and (min-width: 1800px) {   
     body header .logo .header_content { position: absolute; top: 100%; transform: translateY(100%);  left: 9%; margin-right: 10%; width: 80%; }
     body header .logo .header_content h1{ font-size: 75px; margin-bottom: 0; }
     body header .logo .header_content p{ font-size: 1.5rem; display: block; padding-bottom: 2rem; }
-   
+
+    body .container_cookies .contenido{ width: 50%; max-width: 50%; position: absolute; top: 10%; left: 25%; }
+    body .container_cookies .overlay_cookies p{ padding: 50px 23% 0 0; }  
+
     body .about .about_content .about_colum{ height: 90vh; position: static; top: 0; left: 0;}
     body .services .services_content h2{ font-size: 2.5em; padding-top: 60px; margin-left: 15%; width: 100%; display: block;}    
     body .services .services_content .general_container{ width: 70%; height: auto; display: flex; margin-left: 14%;}
     body .services .services_content .general_container .services_item{ width: 70%; height: auto; margin-left: 0; }
     body .services .services_content .general_container .services_item .hover_item h3{ font-size: 1 .5rem; }
     body .services .services_content .general_container .services_item .hover_item p{ font-size: 1rem; }
-   
+
 }
