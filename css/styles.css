@@ -32,7 +32,7 @@ body header .logo .header_content { width: 100%; position: absolute; top: 70%; t
 body header .logo .header_content h1{ font-family: 'Ubuntu'; font-size: 35px; margin-bottom: 0; margin-left: 7%; }
 body header .logo .header_content p{ font-family: 'myriad', sans-serif; font-size: 1rem; display: block; padding: 0 5% 2rem 7%; }
 body header .logo #show_menu{ display: block; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px; }
-body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 27px;font-weight: bolder; position: relative; top: 10px; right: 14px; padding: 5px 15px 5px 8px;}
+body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 27px;font-weight: bolder; position: absolute; top: 10px; right: 14px; /*padding: 5px 15px 5px 8px;*/}
 body header .logo #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305; }
 body header .logo #close_menu{ display: none; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px;}
 body header .logo #close_menu::before{content: 'X'; font-size: 27px; font-weight: bolder; position: relative; top: 10px; right: -16px;}
