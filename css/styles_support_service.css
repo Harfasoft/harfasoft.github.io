@@ -10,7 +10,7 @@ body header .header_video { width: 100%; height: 100%; /*overflow: hidden;*/ }
 body header .header_video figure { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 body header .header_video figure img { width: 100%; height: 100%; object-fit: cover; }
 body header .header_video .header_overlay{ background-color: #090024; /*height: 100vh;*/ width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70; }
-body header .header_content{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 3; }
+body header .header_content{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 1; }
 body header .header_content h1 { font-size: 3rem; margin-bottom: 1rem; }
 body header .header_content h2 { font-size: 1.1rem; margin-bottom: 2rem; }
 body header .header_content a { background-color: #eb7305; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; }
