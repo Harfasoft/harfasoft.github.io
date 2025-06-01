@@ -96,7 +96,7 @@
         </figure>
         <div class="box-one-text">
         <p>En <strong>HARFASOFT</strong>, estamos comprometidos con brindar soluciones efectivas a los problemas informáticos de nuestros clientes. Nuestro servicio de soporte técnico está diseñado para ayudar a resolver fallos que afectan el rendimiento de los equipos y dificultan el desarrollo normal de las actividades diarias.</p>
-    <p>Entendemos que tu equipo de cómputo es vital para tus actividades. Por eso te ofrecemos un servicio de soporte técnico confiable, rápido y con atención personalizada.</p>       
+    <p>Entendemos que tu equipo de cómputo es vital para tus actividades. Por eso te ofrecemos un servicio de soporte técnico confiable, rápido y con atención personalizada.</p> 
     </div>
     </div>
     <!--<h2>🖥️ Servicios de Soporte Técnico</h2>-->
@@ -132,7 +132,17 @@
       <p>¡Obtén un <strong>20% de descuento</strong> en tu primer servicio! <br />
       Además, si nos recomiendas, tú y tu referido recibirán <strong>beneficios exclusivos</strong>.</p>
     </div>
-
+  </section>
+  <section class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <div class="slide"><img src="../img/soporte-tecnico.webp" alt="Repaired Equipment 1" /></div>
+      <div class="slide"><img src="../img/support_image.webp" alt="Repaired Equipment 2" /></div>
+      <div class="slide"><img src="../img/reparing-equip-3.webp" alt="Repaired Equipment 3" /></div>
+      <div class="slide"><img src="../img/reparing-equip-1.webp" alt="Repaired Equipment 4" /></div>
+      <!-- Agrega más imágenes si deseas -->
+    </div>
+    <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
   </section>
 <section class="fixed_home">
         <div class="return"><a href="#header" aria-label="Button return to the initial"></a></div>
@@ -186,6 +196,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const scriptsToLoad = [
+            { src: "../js/slide_support_service.js", async: true },
             { src: "../js/menu.js", async: true },            
             { src: "../js/policy_cookies.js", async: true },                        
             { src: "https://www.googletagmanager.com/gtag/js?id=G-Y966CQSQ2Z", async: true }
