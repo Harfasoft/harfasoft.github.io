@@ -48,7 +48,7 @@ body .support-container {
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
       border-radius: 8px;
     }
-body .services { display: block; }
+body .services { /*background-color: aqua;*/ display: block; padding-top: 60px; }
 body .support-container .services .item_service{ width: 100%; max-width: 300px; margin: 0 auto; padding: 1rem; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px; /*text-align: center;*/ margin-bottom: 2rem; }
 body .support-container .services .item_service:hover { background-color: #eb7305; color: #ffffff; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); transform: translateY(-5px); transition: all 0.3s ease; }
 body .support-container .services .item_service h2 { color: #090024; font-size: 1.5rem; margin: 1.5rem 0; text-align: center; }
