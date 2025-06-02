@@ -17,7 +17,7 @@ body header .header_video { width: 100%; height: 100%; /*overflow: hidden;*/ }
 body header .header_video figure { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 body header .header_video figure img { width: 100%; height: 100%; object-fit: cover; }
 body header .header_video .header_overlay{ background-color: #090024; /*height: 100vh;*/ width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70; }
-body header .header_content{ width: 100%; height: 100%; position: absolute; top: 50px; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 3; }
+body header .header_content{ width: 100%; height: 100%; position: absolute; top: 30px; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 3; }
 body header .header_content h1 { font-size: 3rem; margin-bottom: 1rem; }
 body header .header_content h2 { font-size: 1.1rem; margin-bottom: 2rem; }
 body header .header_content a { background-color: #eb7305; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; }
@@ -33,7 +33,7 @@ body header .logo #close_menu:hover{cursor: pointer; border-radius: 3px; border:
 body .support-container .text{ margin-bottom: 60px; }
 body .support-container .text h2{ color: #090024; font-size: 2.1rem; font-family: 'Ubuntu'; margin-bottom: 20px; }
 body .support-container .text p{ font-size: 1.2rem; line-height: 1.6; text-align: left; }
-body .support-container .box-one{ background-color: #090024; color: #ffffff; margin-bottom: 50px; }
+body .support-container .box-one{ background-color: #090024; color: #ffffff; margin-bottom: 70px; }
 body .support-container .box-one figure{ width: 100%; height: 100%; padding: 25px 10px 0 0; }
 body .support-container .box-one figure img{ width: 100%; height: 100%; object-fit: cover; border-radius: 0 30% 30% 0;}
 body .support-container .box-one .box-one-text{ margin-top: 50px; padding: 20px 20px 30px 20px; /*border-radius: 30% 0 0 30%;*/ }
@@ -59,15 +59,12 @@ body .support-container .services .item_service ul li::before { content: "✅ ";
 body .slider-container { width: 90%; max-width: 800px; margin: 50px auto; overflow: hidden; /*border-radius: 12px;*/ box-shadow: 0 5px 20px rgba(0,0,0,0.1); position: relative; }
 body .slider-container .slider-track { display: flex; transition: transform 0.5s ease-in-out; }
 body .slider-container .slider-track .slide { min-width: 100%; transition: 0.5s; }
-body .slider-container .slider-track .slide img { width: 100%; height: auto; display: block; }
+body .slider-container .slider-track .slide img { width: 100%; height: auto; /*display: block;*/  object-fit: contain;}
+body .slider-container .slider-track .slide .description-image { background-color: #090024; border-radius: 5px; color: #ffffff; padding: 10px; position: relative; bottom: 5px; left: 0; opacity: .70; width: 100%; z-index: 999; }
+body .slider-container .slider-track .slide .description-image h3 { margin: 0; font-size: 1rem; }
+body .slider-container .slider-track .slide .description-image p { margin-top: 5px; font-size: .8rem; }
 body .slider-container .nav-button { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); border: none; color: white; font-size: 24px; cursor: pointer; padding: 10px; border-radius: 50%; z-index: 100; }
 body .slider-container .nav-button:hover { background-color: rgba(0,0,0,0.7); }
 body .slider-container .prev { left: 15px; }
 body .slider-container .next { right: 15px; }
 body .support-container .promo, .contacto { background-color: #eb7305; color: white; padding: 1rem; margin-top: 2rem; border-radius: 5px; }
-
-    /*.contacto a {
-      color: #fff;
-      font-weight: bold;
-      text-decoration: underline;
-    }*/
