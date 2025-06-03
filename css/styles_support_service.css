@@ -17,10 +17,10 @@ body header .header_video { width: 100%; height: 100%; /*overflow: hidden;*/ }
 body header .header_video figure { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 body header .header_video figure img { width: 100%; height: 100%; object-fit: cover; }
 body header .header_video .header_overlay{ background-color: #090024; /*height: 100vh;*/ width: 100vw; position: absolute; top: 0; left: 0; z-index: 1; opacity: .70; }
-body header .header_content{ width: 100%; height: 100%; position: absolute; top: 30px; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 3; }
+body header .header_content{ width: 100%; height: 100%; position: absolute; top: 30px; left: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; color: #ffffff; z-index: 2; }
 body header .header_content h1 { font-size: 3rem; margin-bottom: 1rem; }
 body header .header_content h2 { font-size: 1.1rem; margin-bottom: 2rem; }
-body header .header_content a { background-color: #eb7305; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; }
+/*body header .header_content a { background-color: #eb7305; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2rem; }*/
 
 /* body header .logo #show_menu{background-color: blueviolet; display: block; color:#eb7305; width: 50px; height: 50px; position: absolute; top: 20px; right: 30px; }
 body header .logo #show_menu::before{ content: '|||'; transform: rotate(90deg);font-size: 27px;font-weight: bolder; position: absolute; top: 10px; right: 14px; /*padding: 5px 15px 5px 8px; }
@@ -53,7 +53,7 @@ body .support-container .services .item_service{ width: 100%; max-width: 300px; 
 body .support-container .services .item_service:hover { background-color: #eb7305; color: #ffffff; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); transform: translateY(-5px); transition: all 0.3s ease; }
 body .support-container .services .item_service h2 { color: #090024; font-size: 1.5rem; margin: 1.5rem 0; text-align: center; }
 body .support-container .services .item_service ul { list-style: none; line-height: 1.6; padding-left: 1rem; }
-body .support-container .services .item_service ul li { margin-bottom: 0.5rem;  font-size: 1.1rem;}
+body .support-container .services .item_service ul li { margin-bottom: 0.5rem;  font-size: 1.1rem; }
 /*body .support-container .services .item_service ul li::before { content: "✔️ "; color: #090024; }*/
 body .support-container .services .item_service ul li::before { content: "✅ "; color: #eb7305; }
 body .slider-container { width: 90%; max-width: 800px; margin: 50px auto; overflow: hidden; /*border-radius: 12px;*/ box-shadow: 0 5px 20px rgba(0,0,0,0.1); position: relative; }
@@ -68,3 +68,20 @@ body .slider-container .nav-button:hover { background-color: rgba(0,0,0,0.7); }
 body .slider-container .prev { left: 15px; }
 body .slider-container .next { right: 15px; }
 body .support-container .promo, .contacto { background-color: #eb7305; color: white; padding: 1rem; margin-top: 2rem; border-radius: 5px; }
+
+@media only screen and (min-width: 480px) {
+  body header .header_content h1 { font-size: 4rem; }
+  body header .header_content h2 { font-size: 1.5rem; }
+  body header .header_content a { font-size: 1.5rem; padding: 15px 30px; }
+  body .support-container .text h2 { font-size: 2.5rem; }
+  body .support-container .text p{ font-size: 1.4rem; }
+  body .support-container .box-one .box-one-text p{ font-size: 1.4rem; }
+  body .support-container .services .item_service h2 { font-size: 1.8rem; }
+  body .support-container .services .item_service { max-width: 400px; }
+  body .support-container .services .item_service ul li { font-size: 1.3rem; }
+  body .support-container{ /*background-color: aqua;*/ margin-top: -150px;}
+  body .slider-container .slider-track .slide .description-image h3 { margin: 0; font-size: 1.2rem; }
+  body .slider-container .slider-track .slide .description-image p { margin-top: 5px; font-size: .9rem; }
+  
+  
+}
