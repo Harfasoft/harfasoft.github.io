@@ -79,7 +79,7 @@ body .support-container .promo, .contacto { background-color: #eb7305; color: wh
   body .support-container .services .item_service h2 { font-size: 1.8rem; }
   body .support-container .services .item_service { max-width: 400px; }
   body .support-container .services .item_service ul li { font-size: 1.3rem; }
-  body .support-container{ /*background-color: aqua;*/ margin-top: -150px;}
+  body .support-container{ /*background-color: aqua;*/ margin-top: -100px;}
   body .slider-container .slider-track .slide .description-image h3 { margin: 0; font-size: 1.2rem; }
   body .slider-container .slider-track .slide .description-image p { margin-top: 5px; font-size: .9rem; }
   
