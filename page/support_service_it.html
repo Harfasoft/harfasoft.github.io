@@ -38,7 +38,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <title>Soporte Técnico | HARFASOFT</title> 
-  <link rel="stylesheet" href="../css/styles.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../css/styles.css" media="print" onload="this.media='all'"> 
     <link rel="stylesheet" href="../css/icomoon.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="../css/styles_support_service.css" media="print" onload="this.media='all'">
 </head>
@@ -58,7 +58,7 @@
             <h2>¡Tu tecnología en manos expertas!</h2>
         </div>     
         <div class="logo">
-            <figure class="logo_image"> <a class="image" href="../index.html"><img src="../img/Logo.svg" 
+            <figure class="logo_image"> <a class="image" href="../index.html"><img src="../img/Logo.svg" loading="lazy"
                         alt="logo-empresa" /></a></figure>
             <div class="info_header">
                 <p><a href="tel:+573146014133">¡Llámanos!: +57 (314) 601 41 33</a></p>
@@ -92,7 +92,7 @@
 </div>
     <div class="box-one">
         <figure>
-            <img src="../img/support_image.webp" alt="Soporte Técnico Informático" />            
+            <img src="../img/support_image.webp" loading="lazy" alt="Soporte Técnico Informático" />            
         </figure>
         <div class="box-one-text">
         <p>En <strong>HARFASOFT</strong>, estamos comprometidos con brindar soluciones efectivas a los problemas informáticos de nuestros clientes. Nuestro servicio de soporte técnico está diseñado para ayudar a resolver fallos que afectan el rendimiento de los equipos y dificultan el desarrollo normal de las actividades diarias.</p>
@@ -110,12 +110,8 @@
     </div>
     <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
     <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
-     </div>
-    <!--<h2>🖥️ Servicios de Soporte Técnico</h2>-->
+     </div>    
     <div class="services">
-      <!--<h3>Atención a Domicilio</h3>
-      <p>Brindamos atención a domicilio en Mosquera y alrededores, sin costo adicional. Nuestros técnicos se desplazan hasta tu ubicación para ofrecerte el mejor servicio.</p>-->
-    
     <div class="item_service">
       <h2>🔧 ¿Qué hacemos por ti?</h2>
     <ul>
@@ -141,11 +137,10 @@
 </div>
     <div class="promo">
       <h2>🚀 Promoción de lanzamiento</h2>
-      <p>¡Obtén un <strong>20% de descuento</strong> en tu primer servicio! en mano de obra y diagnóstico. <br />
-      Además, si nos recomiendas, tú y tu referido recibirán <strong>beneficios exclusivos</strong>.</p>
+      <p>¡Obtén un <strong>20% de descuento</strong> en tu primer servicio! en mano de obra y diagnóstico. <br /></p>
     </div>
   </section> 
-<section class="fixed_home">
+ <section class="fixed_home">
         <div class="return"><a href="#header" aria-label="Button return to the initial"></a></div>
         <div class="whatsapp"><a target="_blank" rel="noreferrer" href="https://wa.me/message/7K4Z3ITHTIT2J1" aria-label="Contáctanos por WhatsApp"></a></div>
     </section>
@@ -194,13 +189,12 @@
     const currentYear = new Date().getFullYear(); 
     document.getElementById('year').textContent = currentYear;    
 </script>
-<script>
+<script async>
     document.addEventListener("DOMContentLoaded", function() {
         const scriptsToLoad = [
             { src: "../js/slide_support_service.js", async: true },
             { src: "../js/menu.js", async: true },            
-            { src: "../js/policy_cookies.js", async: true },
-            { src: "../js/prueba-screen.js", async: true },                      
+            { src: "../js/policy_cookies.js", async: true },                               
             { src: "https://www.googletagmanager.com/gtag/js?id=G-Y966CQSQ2Z", async: true }
         ];
         scriptsToLoad.forEach(scriptInfo => {
