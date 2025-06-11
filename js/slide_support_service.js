@@ -15,6 +15,4 @@
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       updateSlidePosition();
     }
-
-    // Autoplay opcional
     setInterval(nextSlide, 5000);
